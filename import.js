@@ -1,7 +1,7 @@
 var ARI = "<a href=\"http://www.cs.huji.ac.il/~arir/\" target=\"_blank\">Ari Rappoport</a>";
 var ROI = "<a href=\"http://ie.technion.ac.il/~roiri/\" target=\"_blank\">Roi Reichart</a>";
 var OMRI = "<a href=\"http://www.cs.huji.ac.il/~oabend/\" target=\"_blank\">Omri Abend</a>";
-var HOME = "http://homes.cs.washington.edu/~roysch/";
+var HOME = "https://roys174.github.io/";
 //var HOME = "http://www.cs.huji.ac.il/~roys02/";
 var NOAH = "<a href=\"http://homes.cs.washington.edu/~nasmith/\" target=\"_blank\">Noah A. Smith</a>";
 var HAO = "<a href=\"http://homes.cs.washington.edu/~hapeng/\" target=\"_blank\">Hao Peng</a>";
