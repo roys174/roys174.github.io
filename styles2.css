@@ -1,0 +1,70 @@
+BODY
+{
+  font-family:'"Helvetica Neue","Arial","sans-serif"';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.7em;
+  letter-spacing: 0px;
+  font-weight: 400;
+  COLOR: #555555;
+  
+}
+
+/*margin-left:18%;
+  margin-right:18%;--
+*/
+
+img {
+	float;right; 
+/*	margin: 0px 0px 10px 10px;*/
+   max-width: 45%;
+}
+
+
+.normal{
+  font-weight: 300;
+  COLOR: #11111;
+}
+
+.code_description{
+	text-indent:50px;
+}
+
+BODY 	A:link {font-weight: 400; text-decoration: uline; color: #333333; OUTLINE: 0;}
+BODY	A:visited {font-weight: 400; text-decoration: none; color: #333333; OUTLINE: 0;}
+BODY	A:active {font-weight: 400; text-decoration: none; color: #333333; OUTLINE: 0;}
+BODY	A:hover {font-weight: 400; color: #11aaff; OUTLINE: 0;}
+
+
+.highlight {
+	font-weight: 400; 
+	text-decoration: none; 
+	color: #333333; 
+	OUTLINE: 0;
+}
+
+highlight:hover {font-weight: 400; text-decoration: none; color: #11aaff; OUTLINE: 0;}
+
+
+.publications
+{
+  margin-bottom:12.0pt;
+  margin-top:1em;
+  line-height: 1.5;
+}
+
+
+.page_titles{
+	font-size:28.0pt;
+	color:#002266;
+	font-weight: 400;
+	max-width: 45%;
+}
+
+.h2_style {
+	color:#8E1B27;
+}
+
+li {
+	margin-bottom:0.3cm;
+}
