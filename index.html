@@ -163,7 +163,7 @@ and <a href="http://ie.technion.ac.il/~roiri/" target="_blank">Roi Reichart</a>.
 <span style='color:red'><b>I will be joining the School of Computer Science and Engineering faculty
 of The Hebrew University of Jerusalem in September 2020.</b></span> 
 <li> 
-<b><span style='color:blue'>New paper</span></b> accepted to NAACL 2019! Congratiulations to Nelson!
+<b><span style='color:blue'>New paper</span></b> accepted to NAACL 2019! Congratiulations Nelson!
 </li>
 <!--<li> 
 Congratulations to Nelson for winning the <b><span style='color:red'>best paper award</span></b> at RepL4NLP 2018!
@@ -213,14 +213,20 @@ Congratulations to Nelson for winning the <b><span style='color:red'>best paper 
 <i><script>document.write(NELSON+", "+ME+" and "+NOAH)</script></i><br>
 <script>
 CONFERENCE('http://naacl2019.org//', 'NAACL 2019')
-//PDF('https://arxiv.org/abs/1808.09357')
+PDF('https://arxiv.org/abs/1904.02668')
 </script>
-<!--[<a href="#" onclick="$('#rr_abstract').toggle();return false;">abstract</a>]-->
-<!--[<script>URL(HOME,'papers/rr/inoculation_poster.pdf','poster')</script>]
-[<script>URL(HOME,'papers/rr/inoculation_slides.pdf','slides')</script>]
+[<a href="#" onclick="$('#inoculation_abstract').toggle();return false;">abstract</a>]
+<!--
+[<script>URL(HOME,'papers/rr/inoculation_slides.pdf','slides')</script>]-->
 [<script>URL(HOME,'papers/bib/inoculation.bib','bib')</script>]
-[<script>URL('','https://github.com/Noahs-ARK/rational-recurrences','code')</script>]-->
+[<script>URL('','https://github.com/nelson-liu/inoculation-by-finetuning','code')</script>]
 <div id="inoculation_abstract" class="publications" style="display:none;">
+Several datasets have recently been constructed to expose brittleness in models trained on existing benchmarks.
+While model performance on these <i>challenge datasets</i> is significantly lower compared to the original benchmark, it is unclear what particular weaknesses they reveal.
+For example, a challenge dataset may be difficult because it targets phenomena that current models cannot capture, or because it simply exploits blind spots in a model's specific training set.
+We introduce <i>inoculation by fine-tuning</i>, a new analysis method for studying challenge datasets by exposing models (the metaphorical patient) to a small amount of data from the challenge dataset (a metaphorical pathogen) and assessing how well they can adapt.
+We apply our method to analyze the NLI "stress tests" (Naik et al., 2018) and the Adversarial SQuAD dataset  (Jia and Liang,2017).
+We show that after slight exposure, some of these datasets are no longer challenging, while others remain difficult. Our results indicate that failures on challenge datasets may lead to very different conclusions about models, training datasets, and the challenge datasets themselves.
 </div>
 </li>
 </ul>
@@ -809,7 +815,7 @@ Schwartz<br>
 <a href="http://www.cs.washington.edu/" target="_blank">Paul G. Allen Center for Computer Science & Engineering</a>, Room 338<br>
 <a href=http://www.washington.edu/ target="_blank">University of Washington</a> <br>
 185 Stevens Way<br>
-Seattle, Washington,  98195-2350<br>
+Seattle, Washington, 98195-2350<br>
 <br>
 <script>email()</script>
 <hr size=2 width="100%" align=center>
@@ -843,7 +849,7 @@ Seattle, Washington,  98195-2350<br>
 <script type='text/javascript' src='http://ministat.org/ms2js.php?l=roy&amp;js=1'></script>
 <!--end of ministat.org code-->
 
-Last update: 02/2019
+Last update: 04/2019
 
 
 
