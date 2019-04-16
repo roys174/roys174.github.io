@@ -77,6 +77,11 @@ function TITLE(x) {
 	document.write('<span style="color:#3366cc"><b>' + x + "</b></span>");
 }
 
+function TITLEF(x, y) {
+	document.write("<a href='" + x +"'"+'><span style="color:#3366cc"><b>' + y + "</b></span></a>");
+}
+
+
 function URL(x, y, z) {
 	var extra = '';
 	if (arguments.length > 3) {
