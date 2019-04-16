@@ -32,8 +32,49 @@ function YEAR(y) {
 }
 
 function PDF(x) {
-	<!--document.write("<a href='"+ x +"' target='_blank' style='background-color:green;color:white'>PDF</a>");-->
-	document.write("[<a href='"+ x +"' target='_blank'>pdf</a>]");
+	FIELD(x, "PDF", "#5cb85c");
+}
+
+function BIB(x) {
+	FIELD(x, "BIB", "orange");
+}
+
+function SLIDES(x) {
+	FIELD(x, "SLIDES", "blue");
+}
+
+function POSTER(x) {
+	FIELD(x, "POSTER", "blue");
+}
+
+function VIDEO(x) {
+	FIELD(x, "VIDEO", "blue");
+}
+
+function INTERVIEW(x) {
+	FIELD(x, "PODCAST INTERVIEW", "blue");
+}
+
+
+function CODE(x) {
+	FIELD(x, "CODE", "brown");
+}
+
+function DATA(x) {
+	FIELD(x, "DATA", "brown");
+}
+
+function ABSTRACT(x) {
+	document.write('<a href="#" onclick="$('+ "'"+x+"'"+').toggle();return false;"><span style="background-color:gray;color:white;white-space: pre-wrap;font-family:monospace;"> ABSTRACT </span></a>');
+}
+
+
+function FIELD(x, y, bgcolor) {
+	document.write("<a href='"+ x +"' target='_blank'><span style='background-color:" + bgcolor +";color:white;white-space:pre-wrap;font-family:monospace;'> "+ y +" </span></a>");
+}
+
+function TITLE(x) {
+	document.write('<span style="color:#3366cc"><b>' + x + "</b></span>");
 }
 
 function URL(x, y, z) {
@@ -45,7 +86,7 @@ function URL(x, y, z) {
 }
 
 function email() {
-    document.write('r o y s c h<img border=0 width=66 height=52 src='+HOME+'index_files/strudel.jpg> cs . washington . edu</p>');
+    document.write('r o y s<img border=0 width=66 height=52 src='+HOME+'index_files/strudel.jpg> allenai . org</p>');
 }
 
 function CONFERENCE(url, name, award=undefined) {
