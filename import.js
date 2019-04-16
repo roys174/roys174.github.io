@@ -69,7 +69,7 @@ function WEBSITE(x) {
 }
 
 function ABSTRACT(x) {
-	document.write('<a href="#" onclick="$('+ "'"+x+"'"+').toggle();return false;"><span style="background-color:gray;color:white;white-space: pre-wrap;font-family:monospace;"> ABSTRACT </span></a>');
+	document.write('<a href="#" onclick="$('+ "'"+x+"'"+').toggle();return false;"><span style="background-color:gray;color:white;white-space:pre-wrap;font-family:monospace;"> ABSTRACT </span></a>');
 }
 
 
