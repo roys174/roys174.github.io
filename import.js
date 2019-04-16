@@ -64,6 +64,10 @@ function DATA(x) {
 	FIELD(x, "DATA", "brown");
 }
 
+function WEBSITE(x) {
+	FIELD(x, "WEBSITE", "brown");
+}
+
 function ABSTRACT(x) {
 	document.write('<a href="#" onclick="$('+ "'"+x+"'"+').toggle();return false;"><span style="background-color:gray;color:white;white-space: pre-wrap;font-family:monospace;"> ABSTRACT </span></a>');
 }
