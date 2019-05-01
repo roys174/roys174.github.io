@@ -25,6 +25,9 @@ var BHAVANA = "<a href=\"http://allenai.org/team/bhavanad/\" target=\"_blank\">B
 var ORENE = "<a href=\"http://allenai.org/team/orene/\" target=\"_blank\">Oren Etzioni</a>";
 var ME = "<span style='color:maroon'><b>Roy Schwartz</b></span>";
 var ME_LINK = "<a href=" + HOME + " target=\"_blank\">Roy Schwartz</a>";
+
+var colors = ["#9b59b6", "#3498db", "#95a5a6", "#e74c3c", "#34495e", "#2ecc71"]
+
 function YEAR(y) {
     if (y > 5) {
         document.write("<h3><font color='black'></font>" + y + "</h3>");
@@ -32,53 +35,53 @@ function YEAR(y) {
 }
 
 function PDF(x) {
-	FIELD(x, "PDF", "#5cb85c");
+	FIELD(x, "PDF", 0)
+}
+
+function ABSTRACT(x) {
+	document.write('<a href="#" onclick="$('+ "'"+x+"'"+').toggle();return false;"><span style="background-color:'+colors[0]+';color:white;white-space:pre-wrap;font-family:monospace;"> ABSTRACT </span></a>');
 }
 
 function BIB(x) {
-	FIELD(x, "BIB", "orange");
+	FIELD(x, "BIB", 0);
 }
 
 function SLIDES(x) {
-	FIELD(x, "SLIDES", "blue");
+	FIELD(x, "SLIDES", 1);
 }
 
 function PRESS(x, y) {
-	FIELD(y, x, "purple");
+	FIELD(y, x, 5);
 }
 
 function POSTER(x) {
-	FIELD(x, "POSTER", "blue");
+	FIELD(x, "POSTER", 1);
 }
 
 function VIDEO(x) {
-	FIELD(x, "VIDEO", "blue");
+	FIELD(x, "VIDEO", 1);
 }
 
 function INTERVIEW(x) {
-	FIELD(x, "PODCAST INTERVIEW", "blue");
+	FIELD(x, "PODCAST INTERVIEW", 5);
 }
 
 
 function CODE(x) {
-	FIELD(x, "CODE", "brown");
+	FIELD(x, "CODE", 2);
 }
 
 function DATA(x) {
-	FIELD(x, "DATA", "brown");
+	FIELD(x, "DATA", 2);
 }
 
 function WEBSITE(x) {
-	FIELD(x, "WEBSITE", "brown");
-}
-
-function ABSTRACT(x) {
-	document.write('<a href="#" onclick="$('+ "'"+x+"'"+').toggle();return false;"><span style="background-color:gray;color:white;white-space:pre-wrap;font-family:monospace;"> ABSTRACT </span></a>');
+	FIELD(x, "WEBSITE", 2);
 }
 
 
-function FIELD(x, y, bgcolor) {
-	document.write("<a href='"+ x +"' target='_blank'><span style='background-color:" + bgcolor +";color:white;white-space:pre-wrap;font-family:monospace;'> "+ y +" </span></a>");
+function FIELD(x, y, bgcolor_index) {
+	document.write("<a href='"+ x +"' target='_blank'><span style='background-color:" + colors[bgcolor_index] +";color:white;white-space:pre-wrap;font-family:monospace;'> "+ y +" </span></a>");
 }
 
 function TITLE(x) {
