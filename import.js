@@ -43,6 +43,10 @@ function SLIDES(x) {
 	FIELD(x, "SLIDES", "blue");
 }
 
+function PRESS(x, y) {
+	FIELD(y, x, "purple");
+}
+
 function POSTER(x) {
 	FIELD(x, "POSTER", "blue");
 }
