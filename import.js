@@ -14,6 +14,7 @@ var YANNIS = "<a href=\"http://www.ikonstas.net/\" target=\"_blank\">Yannis Kons
 var LI = "Li Zilles";
 var SUCHIN= "<a href=\"https://suchin.io/\" target=\"_blank\">Suchin Gururangan</a>";
 var SWABHA = "<a href=\"http://www.cs.cmu.edu/~sswayamd/\" target=\"_blank\">Swabha Swayamdipta</a>";
+var JESSE = "<a href=\"http://www.cs.cmu.edu/~jessed/\" target=\"_blank\">Jesse Dodge</a>";
 var OMER = "<a href=\"https://levyomer.wordpress.com/\" target=\"_blank\">Omer Levy</a>";
 var NELSON = "<a href=\"https://homes.cs.washington.edu/~nfliu/\" target=\"_blank\">Nelson F. Liu</a>";
 var CHENHAO = "<a href=\"https://chenhaot.com/\" target=\"_blank\">Chenhao Tan</a>";

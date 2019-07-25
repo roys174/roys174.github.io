@@ -167,7 +167,7 @@ and <a href="http://ie.technion.ac.il/~roiri/" target="_blank">Roi Reichart</a>.
 <span style='color:red'><b>I will be joining the School of Computer Science and Engineering faculty
 of The Hebrew University of Jerusalem in September 2020.</b></span> 
 <li> 
-<b><span style='color:blue'>New paper</span></b> accepted to NAACL 2019! Congratiulations Nelson!
+<b>Check out our new opinion piece on <span style='color:green'>Green AI</span></b>
 </li>
 <!--<li> 
 Congratulations to Nelson for winning the <b><span style='color:red'>best paper award</span></b> at RepL4NLP 2018!
@@ -212,7 +212,21 @@ Congratulations to Nelson for winning the <b><span style='color:red'>best paper 
 <script>YEAR(2019)</script>
 <ul>
 <li>
-<span style='color:blue'><b>[NEW]</b></span>
+<span style='color:green'><b>Green AI</b></span>
+<br>
+<i><script>document.write(ME+", "+JESSE+", "+NOAH+" and "+ORENE)</script></i><br>
+<script>
+PDF('https://arxiv.org/abs/1907.10597')
+</script>
+<script>ABSTRACT("#greenai_abstract")</script>
+<script>BIB('papers/bib/greenai.bib')</script>
+<div id="greenai_abstract" class="publications" style="display:none;">
+The computations required for deep learning research have been doubling every few months, resulting in an estimated 300,000x increase from 2012 to 2018 [2]. These computations have a surprisingly large carbon footprint [38]. Ironically, deep learning was inspired by the human brain, which is remarkably energy efficient. Moreover, the financial cost of the computations can make it difficult for academics, students, and researchers from emerging economies to engage in deep learning research.
+
+This position paper advocates a practical solution by making <b>efficiency</b> an evaluation criterion for research alongside accuracy and related measures. In addition, we propose reporting the financial cost or "price tag" of developing, training, and running models to provide baselines for the investigation of increasingly efficient methods. Our goal is to make AI both greener and more inclusive&mdash;enabling any inspired undergraduate with a laptop to write high-quality research papers. <span style='color:green'>Green AI</span> is an emerging focus at the Allen Institute for AI.
+</div>
+</li>
+<li>
 <script>TITLE('Inoculation by Fine-Tuning: A Method for Analyzing Challenge Datasets')</script>
 <br>
 <i><script>document.write(NELSON+", "+ME+" and "+NOAH)</script></i><br>
@@ -220,10 +234,9 @@ Congratulations to Nelson for winning the <b><span style='color:red'>best paper 
 CONFERENCE('http://naacl2019.org//', 'NAACL 2019')
 PDF('https://arxiv.org/abs/1904.02668')
 </script>
-<!--
-[<script>URL('papers/rr/inoculation_slides.pdf')</script>-->
 <script>ABSTRACT("#inoculation_abstract")</script>
 <script>BIB('papers/bib/inoculation.bib')</script>
+<script>SLIDES('https://cs.stanford.edu/~nfliu/papers/liu+schwartz+smith.naacl2019.slides.pdf')</script>
 <script>CODE('https://github.com/nelson-liu/inoculation-by-finetuning')</script>
 <div id="inoculation_abstract" class="publications" style="display:none;">
 Several datasets have recently been constructed to expose brittleness in models trained on existing benchmarks.
@@ -400,7 +413,7 @@ This paper is concerned with identifying contexts useful for training word repre
 <script>SLIDES('papers/language_constraint/lsdsem_uw_nlp_slides.pdf')</script>
 <script>POSTER('papers/language_constraint/lsdsem_uw_nlp_poster.pdf')</script>
 <div id="lsdsem_uw_nlp" class="publications" style="display:none;">
-This paper describes University of Washington NLP's submission for the Linking Models of Lexical, Sentential and Discourse-level Semantics (LSDSem 2017) shared task---the Story Cloze Task. Our system is a linear classifier with a variety of features, including both the scores of a neural language model and style features. We report 75.2% accuracy on the task. A further discussion of our results can be found in Schwartz et al. (2017).
+This paper describes University of Washington NLP's submission for the Linking Models of Lexical, Sentential and Discourse-level Semantics (LSDSem 2017) shared task&mdash;the Story Cloze Task. Our system is a linear classifier with a variety of features, including both the scores of a neural language model and style features. We report 75.2% accuracy on the task. A further discussion of our results can be found in Schwartz et al. (2017).
 </div>
 </li>
 </ul>
@@ -861,7 +874,7 @@ Seattle, Washington, 98195-2350<br>-->
 <script type='text/javascript' src='http://ministat.org/ms2js.php?l=roy&amp;js=1'></script>
 <!--end of ministat.org code-->
 
-Last update: 06/2019
+Last update: 07/2019
 
 
 
