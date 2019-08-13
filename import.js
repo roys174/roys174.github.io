@@ -13,6 +13,12 @@ var YEJIN = "<a href=\"http://homes.cs.washington.edu/~yejin/\" target=\"_blank\
 var YANNIS = "<a href=\"http://www.ikonstas.net/\" target=\"_blank\">Yannis Konstas</a>";
 var LI = "Li Zilles";
 var SUCHIN= "<a href=\"https://suchin.io/\" target=\"_blank\">Suchin Gururangan</a>";
+var DALLAS= "<a href=\"https://www.cs.cmu.edu/~dcard/\" target=\"_blank\">Dallas Card</a>";
+var MATTP= "<a href=\"https://scholar.google.com/citations?user=K5nCPZwAAAAJ&hl\" target=\"_blank\">Matthew E. Peters</a>";
+var MARKN= "<a href=\"http://markneumann.xyz\" target=\"_blank\">Mark Neumann</a>";
+var ROB= "<a href=\"https://rloganiv.github.io\" target=\"_blank\">Robert Logan</a>";
+var VIDUR= "<a href=\"https://scholar.google.com/citations?user=NobF_hEAAAAJ&hl\" target=\"_blank\">Vidur Joshi</a>";
+var SAMEER= "<a href=\"http://sameersingh.org\" target=\"_blank\">Sameer Singh</a>";
 var SWABHA = "<a href=\"http://www.cs.cmu.edu/~sswayamd/\" target=\"_blank\">Swabha Swayamdipta</a>";
 var JESSE = "<a href=\"http://www.cs.cmu.edu/~jessed/\" target=\"_blank\">Jesse Dodge</a>";
 var OMER = "<a href=\"https://levyomer.wordpress.com/\" target=\"_blank\">Omer Levy</a>";
@@ -27,7 +33,7 @@ var ORENE = "<a href=\"http://allenai.org/team/orene/\" target=\"_blank\">Oren E
 var ME = "<span style='color:maroon'><b>Roy Schwartz</b></span>";
 var ME_LINK = "<a href=" + HOME + " target=\"_blank\">Roy Schwartz</a>";
 
-var colors = ["#9b59b6", "#3498db", "#95a5a6", "#e74c3c", "#34495e", "#2ecc71"]
+var colors = ["#9b59b6", "#3498db", "#95a5a6", "#e74c3c", "#34495e", "#2ecc71", "#006600"]
 
 function YEAR(y) {
     if (y > 5) {
@@ -80,9 +86,17 @@ function WEBSITE(x) {
 	FIELD(x, "WEBSITE", 2);
 }
 
+function GREENAI() {
+	HASHTAG("#greenai", 6);
+}
+
 
 function FIELD(x, y, bgcolor_index) {
 	document.write("<a href='"+ x +"' target='_blank'><span style='background-color:" + colors[bgcolor_index] +";color:white;white-space:pre-wrap;font-family:monospace;'> "+ y +" </span></a>");
+}
+
+function HASHTAG(x, bgcolor_index) {
+	document.write("<span style='background-color:" + colors[bgcolor_index] +";color:white;white-space:pre-wrap;font-family:monospace;'> "+x+" </span>");
 }
 
 function TITLE(x) {
