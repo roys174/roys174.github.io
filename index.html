@@ -1,14 +1,14 @@
 <!-- !DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> -->
 <!DOCTYPE html>
 <html>
-  
+ 
 <head>
 <meta name="viewport" content="width=device-width">
 
 <script type="text/javascript" src="import.js"></script>
 <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 
-    
+ 
 
 
 <link href='http://fonts.googleapis.com/css?family=Cabin:600|Nunito:400,300' rel='stylesheet' type='text/css'>
@@ -239,12 +239,13 @@ This position paper advocates a practical solution by making <b>efficiency</b> a
 <script>
 CONFERENCE('https://www.emnlp-ijcnlp2019.org', 'EMNLP 2019')
 //PDF('')
-//ABSTRACT("#showyourwork_abstract")
-//BIB('papers/bib/showyourwork.bib')
-//SLIDES('https://cs.stanford.edu/~nfliu/papers/liu+schwartz+smith.naacl2019.slides.pdf')
-//CODE('https://github.com/nelson-liu/inoculation-by-finetuning')-->
 </script>
+<script>ABSTRACT("#showyourwork_abstract")</script>
+<script>BIB('papers/bib/showyourwork.bib')</script>
+<!--<script>SLIDES('')</script> -->
+<script>CODE('https://github.com/allenai/allentune')</script>
 <div id="showyourwork_abstract" class="publications" style="display:none;">
+Research in natural language processing proceeds, in part, by demonstrating that new models achieve superior performance (e.g.,  accuracy) on held-out test data,  compared to previous  results.   In  this  paper,  we  demonstrate that test-set performance scores alone are insufficient  for  drawing  accurate  conclusions about which model performs best.  We argue for reporting additional details, especially performance  on  validation  data  obtained  during model development.  We present a novel technique  for  doing  so: <i>expected  validation  performance</i> of the best-found model as a function  of  computation  budget  (i.e.,  the  number of hyperparameter search trials or the overall training  time).   Using  our  approach,  we  findmultiple recent model comparisons where authors would have reached a different conclusion  if  they  had  used  more  (or  less)  computation. Our  approach  also  allows  us  to  estimate  the  amount  of  computation  required  to obtain a given accuracy; applying it to several recently published results yields massive variation across papers, from hours to weeks.  We conclude with a set of best practices for reporting  experimental  results  which  allow  for robust future comparisons, and provide code to allow researchers to use our technique.
 </div>
 </li><li>
 <script>TITLE('RNN Architecture Learning with Sparse Regularization '); GREENAI();</script>
@@ -253,12 +254,13 @@ CONFERENCE('https://www.emnlp-ijcnlp2019.org', 'EMNLP 2019')
 <script>
 CONFERENCE('https://www.emnlp-ijcnlp2019.org', 'EMNLP 2019')
 //PDF('')
-//ABSTRACT("#sparsifying_abstract")
-//BIB('papers/bib/sparsifying.bib')
-//SLIDES('https://cs.stanford.edu/~nfliu/papers/liu+schwartz+smith.naacl2019.slides.pdf')
-//CODE('https://github.com/nelson-liu/inoculation-by-finetuning')-->
 </script>
+<script>ABSTRACT("#sparsifying_abstract")</script>
+<script>BIB('papers/bib/sparsifying.bib')</script>
+<!--<script>SLIDES('')</script> -->
+<script>CODE('https://github.com/dodgejesse/sparsifying_regularizers_for_RRNNs')</script>
 <div id="sparsifying_abstract" class="publications" style="display:none;">
+Neural models for NLP typically use large numbers of parameters to reach state-of-the- art performance, which can lead to excessive memory usage and increased runtime. We present a structure learning method for learning sparse, parameter-efficient NLP models. Our method applies group lasso to rational RNNs (Peng et al., 2018), a family of models that is closely connected to weighted finite-state automata (WFSAs). We take advantage of rational RNNs’ natural grouping of the weights, so the group lasso penalty directly removes WFSA states, substantially reducing the number of parameters in the model. Our experiments on a number of sentiment analysis datasets, using both GloVe and BERT embeddings, show that our approach learns neural structures which have fewer parameters without sacrificing performance relative to parameter-rich baselines. Our method also highlights the interpretable properties of rational RNNs. We show that sparsifying such models makes them easier to visualize, and we present models that rely exclusively on as few as three WFSAs after pruning more than 90% of the weights. We publicly release our code.
 </div>
 </li><li>
 <script>TITLE('PaLM: A Hybrid Parser and Language Model')</script>
@@ -267,12 +269,13 @@ CONFERENCE('https://www.emnlp-ijcnlp2019.org', 'EMNLP 2019')
 <script>
 CONFERENCE('https://www.emnlp-ijcnlp2019.org', 'EMNLP 2019')
 //PDF('')
-//ABSTRACT("#palm_abstract")
-//BIB('papers/bib/palm.bib')
-//SLIDES('https://cs.stanford.edu/~nfliu/papers/liu+schwartz+smith.naacl2019.slides.pdf')
-//CODE('https://github.com/nelson-liu/inoculation-by-finetuning')-->
 </script>
+<script>ABSTRACT("#palm_abstract")</script>
+<script>BIB('papers/bib/palm.bib')</script>
+<!--<script>SLIDES('')</script>
+<script>CODE('https://github.com/Noahs-ARK/PaLM')</script> -->
 <div id="palm_abstract" class="publications" style="display:none;">
+We present PaLM, a hybrid <b>p</b>arser and neural <b>l</b>anguage <b>m</b>odel. Building on an RNN language model, PaLM adds an attention layer over text spans in the left context. An unsupervised constituency parser can be derived from its attention weights, using a greedy decoding algorithm. We evaluate PaLM on language modeling, and empirically show that it outperforms strong baselines. If syntactic annotations are available, the attention component can be trained in a supervised manner, providing syntactically-informed representations of the context, and further improving language modeling performance.
 </div>
 </li><li>
 <script>TITLE('Knowledge Enhanced Contextual Word Representations')</script>
@@ -281,12 +284,13 @@ CONFERENCE('https://www.emnlp-ijcnlp2019.org', 'EMNLP 2019')
 <script>
 CONFERENCE('https://www.emnlp-ijcnlp2019.org', 'EMNLP 2019')
 //PDF('')
-//ABSTRACT("#kermit_abstract")
-//BIB('papers/bib/kermit.bib')
-//SLIDES('https://cs.stanford.edu/~nfliu/papers/liu+schwartz+smith.naacl2019.slides.pdf')
-//CODE('https://github.com/nelson-liu/inoculation-by-finetuning')-->
 </script>
+<script>ABSTRACT("#kermit_abstract")</script>
+<script>BIB('papers/bib/kermit.bib')</script>
+<!--<script>SLIDES('')</script>
+<script>CODE('https://github.com/Noahs-ARK/PaLM')</script> -->
 <div id="kermit_abstract" class="publications" style="display:none;">
+Contextual word representations, typically trained on unstructured, unlabeled text, do not contain any explicit grounding to real world entities and are often unable to remember facts about those entities. We propose a general method to embed multiple knowledge bases(KBs) into large scale models, and there by enhance their representations with structured, human-curated knowledge. For each KB, we first use an integrated entity linker to retrieve relevant entity embeddings, then update contextual word representations via a form of word-to-entity attention. In contrast to previous approaches, the entity linkers and self-supervised language modeling objective are jointly trained end-to-end in a multitask setting that combines a small amount of entity linking supervision with a large amount of raw text. After integrating WordNet and a subset of Wikipedia into BERT, the knowledge enhanced BERT (KnowBert) demonstrates improved perplexity, ability to recall facts as measured in a probing task and downstream performance on relationship extraction, entity typing, and word sense disambiguation. KnowBert’s runtime is comparable to BERT’sand it scales to large KBs. 
 </div>
 </li>
 <li>
@@ -306,7 +310,7 @@ Several datasets have recently been constructed to expose brittleness in models 
 While model performance on these <i>challenge datasets</i> is significantly lower compared to the original benchmark, it is unclear what particular weaknesses they reveal.
 For example, a challenge dataset may be difficult because it targets phenomena that current models cannot capture, or because it simply exploits blind spots in a model's specific training set.
 We introduce <i>inoculation by fine-tuning</i>, a new analysis method for studying challenge datasets by exposing models (the metaphorical patient) to a small amount of data from the challenge dataset (a metaphorical pathogen) and assessing how well they can adapt.
-We apply our method to analyze the NLI "stress tests" (Naik et al., 2018) and the Adversarial SQuAD dataset  (Jia and Liang,2017).
+We apply our method to analyze the NLI "stress tests" (Naik et al., 2018) and the Adversarial SQuAD dataset (Jia and Liang,2017).
 We show that after slight exposure, some of these datasets are no longer challenging, while others remain difficult. Our results indicate that failures on challenge datasets may lead to very different conclusions about models, training datasets, and the challenge datasets themselves.
 </div>
 </li>
