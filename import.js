@@ -33,7 +33,7 @@ var ORENE = "<a href=\"http://allenai.org/team/orene/\" target=\"_blank\">Oren E
 var ME = "<span style='color:maroon'><b>Roy Schwartz</b></span>";
 var ME_LINK = "<a href=" + HOME + " target=\"_blank\">Roy Schwartz</a>";
 
-var colors = ["#9b59b6", "#3498db", "#95a5a6", "#e74c3c", "#34495e", "#2ecc71", "#006600"]
+var colors = ["#9b59b6", "#3498db", "#95a5a6", "#e74c3c", "#34495e", "#2ecc71", "#006600", "#00CCCC", "#CC0066", "#FFFF00"]
 
 function YEAR(y) {
     if (y > 5) {
@@ -90,13 +90,25 @@ function GREENAI() {
 	HASHTAG("#greenai", 6);
 }
 
+function RATIONAL_RECURRENCES() {
+	HASHTAG("#rational_recurrences", 7);
+}
+
+function ARTIFACTS() {
+	HASHTAG("#artifacts", 8);
+}
+
+function EMBEDDINGS() {
+	HASHTAG("#embeddings", 9);
+}
+
 
 function FIELD(x, y, bgcolor_index) {
 	document.write("<a href='"+ x +"' target='_blank'><span style='background-color:" + colors[bgcolor_index] +";color:white;white-space:pre-wrap;font-family:monospace;'> "+ y +" </span></a>");
 }
 
 function HASHTAG(x, bgcolor_index) {
-	document.write("<span style='background-color:" + colors[bgcolor_index] +";color:white;white-space:pre-wrap;font-family:monospace;'> "+x+" </span>");
+	document.write(" <span style='background-color:" + colors[bgcolor_index] +";color:white;white-space:pre-wrap;font-family:monospace;'> "+x+" </span>  ");
 }
 
 function TITLE(x) {

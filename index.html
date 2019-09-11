@@ -210,7 +210,7 @@ Congratulations to Nelson for winning the <b><span style='color:red'>best paper 
 <script>YEAR(2019)</script>
 <ul>
 <li>
-<span style='color:green'><b>Green AI</b></span>
+<span style='color:green'><b>Green AI</b> <script>GREENAI();</script></span>
 <br>
 <i><script>document.write(ME+"*, "+JESSE+"*, "+NOAH+" and "+ORENE)</script></i><br>
 * Equal contribution<br>
@@ -248,7 +248,7 @@ PDF('https://arxiv.org/abs/1909.03004')
 Research in natural language processing proceeds, in part, by demonstrating that new models achieve superior performance (e.g.,  accuracy) on held-out test data,  compared to previous  results.   In  this  paper,  we  demonstrate that test-set performance scores alone are insufficient  for  drawing  accurate  conclusions about which model performs best.  We argue for reporting additional details, especially performance  on  validation  data  obtained  during model development.  We present a novel technique  for  doing  so: <i>expected  validation  performance</i> of the best-found model as a function  of  computation  budget  (i.e.,  the  number of hyperparameter search trials or the overall training  time).   Using  our  approach,  we  findmultiple recent model comparisons where authors would have reached a different conclusion  if  they  had  used  more  (or  less)  computation. Our  approach  also  allows  us  to  estimate  the  amount  of  computation  required  to obtain a given accuracy; applying it to several recently published results yields massive variation across papers, from hours to weeks.  We conclude with a set of best practices for reporting  experimental  results  which  allow  for robust future comparisons, and provide code to allow researchers to use our technique.
 </div>
 </li><li>
-<script>TITLE('RNN Architecture Learning with Sparse Regularization '); GREENAI();</script>
+<script>TITLE('RNN Architecture Learning with Sparse Regularization '); GREENAI(); RATIONAL_RECURRENCES();</script>
 <br>
 <i><script>document.write(JESSE+", "+ME+", "+HAO+" and "+NOAH)</script></i><br>
 <script>
@@ -263,7 +263,7 @@ PDF('https://arxiv.org/abs/1909.03011')
 Neural models for NLP typically use large numbers of parameters to reach state-of-the- art performance, which can lead to excessive memory usage and increased runtime. We present a structure learning method for learning sparse, parameter-efficient NLP models. Our method applies group lasso to rational RNNs (Peng et al., 2018), a family of models that is closely connected to weighted finite-state automata (WFSAs). We take advantage of rational RNNs’ natural grouping of the weights, so the group lasso penalty directly removes WFSA states, substantially reducing the number of parameters in the model. Our experiments on a number of sentiment analysis datasets, using both GloVe and BERT embeddings, show that our approach learns neural structures which have fewer parameters without sacrificing performance relative to parameter-rich baselines. Our method also highlights the interpretable properties of rational RNNs. We show that sparsifying such models makes them easier to visualize, and we present models that rely exclusively on as few as three WFSAs after pruning more than 90% of the weights. We publicly release our code.
 </div>
 </li><li>
-<script>TITLE('PaLM: A Hybrid Parser and Language Model')</script>
+<script>TITLE('PaLM: A Hybrid Parser and Language Model'); RATIONAL_RECURRENCES(); </script>
 <br>
 <i><script>document.write(HAO+", "+ME+" and "+NOAH)</script></i><br>
 <script>
@@ -294,7 +294,7 @@ Contextual word representations, typically trained on unstructured, unlabeled te
 </div>
 </li>
 <li>
-<script>TITLE('Inoculation by Fine-Tuning: A Method for Analyzing Challenge Datasets')</script>
+<script>TITLE('Inoculation by Fine-Tuning: A Method for Analyzing Challenge Datasets'); ARTIFACTS();</script>
 <br>
 <i><script>document.write(NELSON+", "+ME+" and "+NOAH)</script></i><br>
 <script>
@@ -318,7 +318,7 @@ We show that after slight exposure, some of these datasets are no longer challen
 <script>YEAR(2018)</script>
 <ul>
 <li>
-<script>TITLE('Rational Recurrences')</script>
+<script>TITLE('Rational Recurrences'); RATIONAL_RECURRENCES();</script>
 <br>
 <i><script>document.write(HAO+", "+ME+", "+SAM+" and "+NOAH)</script></i><br>
 <script>
@@ -336,7 +336,7 @@ Despite the tremendous empirical success of neural models in natural language pr
 </div>
 </li>
 <li>
-<script>TITLE('SWAG: A Large-Scale Adversarial Dataset for Grounded Commonsense Inference')</script>
+<script>TITLE('SWAG: A Large-Scale Adversarial Dataset for Grounded Commonsense Inference'); ARTIFACTS();</script>
 <!--
 <i>SWAG: A Large-Scale Adversarial Dataset for Grounded Commonsense Inference</i>
 -->
@@ -360,7 +360,7 @@ Given a partial description like "she opened the hood of the car", humans can re
 </div>
 </li>
 <li>
-<script>TITLE('SoPa: Bridging CNNs, RNNs, and Weighted Finite-State Machines')</script>
+<script>TITLE('SoPa: Bridging CNNs, RNNs, and Weighted Finite-State Machines'); RATIONAL_RECURRENCES();</script>
 <br>
 <i><script>document.write(ME+"*, "+SAM+"* and "+NOAH)</script></i><br>
 * Equal contribution<br>
@@ -414,7 +414,7 @@ In the second task, we predict the numerical scores of review aspects and show t
 </div>
 </li>
 <li>
-<script>TITLE('Annotation Artifacts in Natural Language Inference Data')</script>
+<script>TITLE('Annotation Artifacts in Natural Language Inference Data'); ARTIFACTS();</script>
 <br>
 <i><script>document.write(SUCHIN+"*, "+SWABHA+"*, "+OMER+", "+ME+", "+SAMB+" and "+NOAH)</script></i><br>
 * Equal contribution<br>
@@ -440,7 +440,7 @@ Our findings suggest that the success of natural language inference models to da
 
 <ul>
 <li>
-<script>TITLE('The Effect of Different Writing Tasks on Linguistic Style: A Case Study of the ROC Story Cloze Task')</script>
+<script>TITLE('The Effect of Different Writing Tasks on Linguistic Style: A Case Study of the ROC Story Cloze Task'); ARTIFACTS();</script>
 <br>
 <i><script>document.write(ME+", "+MAARTEN+", "+YANNIS+", "+LI+", "+YEJIN+" and "+NOAH)</script></i><br>
 <script>CONFERENCE('http://www.conll.org/2017/', 'CoNLL 2017')</script>
@@ -456,7 +456,7 @@ A writer's style depends not just on personal traits but also on her intent and 
 </div>
 </li>
 <li>
-<script>TITLE('Automatic selection of context configurations for improved (and fast) class-specific word representations')</script>
+<script>TITLE('Automatic selection of context configurations for improved (and fast) class-specific word representations'); EMBEDDINGS();</script>
 <br>
 <i><a href='https://sites.google.com/site/ivanvulic/' target="_blank")>Ivan Vulić</a>, <script>document.write(ME+", "+ARI+", "+ROI)</script>and <a href="http://www.cl.cam.ac.uk/~alk23/" target="_blank">Anna Korhonen</a></i><br> 
 <script>CONFERENCE('http://www.conll.org/2017/', 'CoNLL 2017')</script>
@@ -490,14 +490,14 @@ This paper describes University of Washington NLP's submission for the Linking M
 
 <ul>
 <li> 
-<script>TITLE('Pattern-based methods for Improved Lexical Semantics and Word Embeddings')</script>
+<script>TITLE('Pattern-based methods for Improved Lexical Semantics and Word Embeddings'); EMBEDDINGS();</script>
 <br>
 <i><script>document.write(ME)</script></i><br> 
 Ph.D. dissertation<br>
 <script>PDF('papers/roy_schwartz_phd_dissertation.pdf')</script>
 <script>BIB('papers/bib/roy_schwartz_phd_dissertation.bib')</script>
 <li>
-<script>TITLE('Symmetric Patterns and Coordinations: Fast and Enhanced Representations of Verbs and Adjectives')</script>
+<script>TITLE('Symmetric Patterns and Coordinations: Fast and Enhanced Representations of Verbs and Adjectives'); EMBEDDINGS();</script>
 <!--<b><i>Symmetric Patterns and Coordinations: Fast and Enhanced Representations of Verbs and Adjectives</i></b>-->
 <br>
 <i><script>document.write(ME+", "+ROI+" and "+ARI)</script></i><br> 
@@ -530,7 +530,7 @@ compared to 5 and 11 hours with BOW and all dependency contexts, respectively.
 
 <ul>
 <li>
-<script>TITLE('Symmetric Pattern Based Word Embeddings for Improved Word Similarity Prediction')</script>
+<script>TITLE('Symmetric Pattern Based Word Embeddings for Improved Word Similarity Prediction'); EMBEDDINGS();</script>
 
 <br>
 <i><script>document.write(ME+", "+ROI+" and "+ARI)</script></i><br> 
@@ -548,7 +548,7 @@ We present a novel word level vector representation based on symmetric patterns 
 
 
 <li>
-<script>TITLE('How Well Do Distributional Models Capture Different Types of Semantic Knowledge?')</script>
+<script>TITLE('How Well Do Distributional Models Capture Different Types of Semantic Knowledge?'); EMBEDDINGS();</script>
 
 
 <br>
