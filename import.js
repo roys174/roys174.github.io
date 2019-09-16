@@ -33,7 +33,7 @@ var ORENE = "<a href=\"http://allenai.org/team/orene/\" target=\"_blank\">Oren E
 var ME = "<span style='color:maroon'><b>Roy Schwartz</b></span>";
 var ME_LINK = "<a href=" + HOME + " target=\"_blank\">Roy Schwartz</a>";
 
-var colors = ["#9b59b6", "#3498db", "#95a5a6", "#e74c3c", "#34495e", "#2ecc71", "#006600", "#00CCCC", "#CC0066", "#FFFF00"]
+var colors = ["#9b59b6", "#3498db", "#95a5a6", "#e74c3c", "#34495e", "#2ecc71", "#006600", "#00CCCC", "#CC0066", "#FB8B24", "#8CADA7"]
 
 function YEAR(y) {
     if (y > 5) {
@@ -86,20 +86,21 @@ function WEBSITE(x) {
 	FIELD(x, "WEBSITE", 2);
 }
 
-function GREENAI() {
-	HASHTAG("#greenai", 6);
+
+function GREENAI(filter) {
+	HASHTAG("greenai", 6, filter);
 }
 
-function RATIONAL_RECURRENCES() {
-	HASHTAG("#rational_recurrences", 7);
+function RATIONAL_RECURRENCES(filter) {
+	HASHTAG("understanding_nlp_models", 7, filter);
 }
 
-function ARTIFACTS() {
-	HASHTAG("#artifacts", 8);
+function ARTIFACTS(filter) {
+	HASHTAG("improving_evaluation", 8, filter);
 }
 
-function EMBEDDINGS() {
-	HASHTAG("#embeddings", 9);
+function EMBEDDINGS(filter) {
+	HASHTAG("word_representation", 9, filter);
 }
 
 
@@ -107,8 +108,41 @@ function FIELD(x, y, bgcolor_index) {
 	document.write("<a href='"+ x +"' target='_blank'><span style='background-color:" + colors[bgcolor_index] +";color:white;white-space:pre-wrap;font-family:monospace;'> "+ y +" </span></a>");
 }
 
-function HASHTAG(x, bgcolor_index) {
-	document.write(" <span style='background-color:" + colors[bgcolor_index] +";color:white;white-space:pre-wrap;font-family:monospace;'> "+x+" </span>  ");
+function HASHTAG(x, bgcolor_index, filter=false) {
+	prefix = '';
+	suffix = '';
+	if (filter) {
+		prefix = '<a onclick="filter_list('+"'"+x+"'"+');">';
+		suffix = '</a>';
+		var list = document.getElementsByClassName("papers");
+	
+		for (i = 0; i < list.length; i++) {
+			document.write("paper is "+list[i].id);
+		  	// list[i].style.display = "none";
+		}
+	}
+	
+	document.write(" "+prefix+"<span style='background-color:" + colors[bgcolor_index] +";color:white;white-space:pre-wrap;font-family:monospace;'> #"+x+" </span>"+suffix+" ");	
+}
+
+function filter_list(name) {
+	var list = document.getElementsByClassName("all");
+	// document.write(name);
+	
+	for (i = 0; i < list.length; i++) {
+		// document.write("paper is");
+		// document.write("paper is "+list[i]);
+	  	list[i].style.display = "none";
+	}
+	var list = document.getElementsByClassName(name);
+	// document.write("bobobo"+list.length+"\n");
+	
+	for (i = 0; i < list.length; i++) {
+		// document.write("paper is");
+		// document.write("paper is "+list[i]);
+	  	list[i].style.display = "block";
+	}
+		
 }
 
 function TITLE(x) {
