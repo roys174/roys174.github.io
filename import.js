@@ -54,7 +54,7 @@ function BIB(x) {
 }
 
 function SLIDES(x) {
-	FIELD(x, "SLIDES", 1);
+	FIELD(x, "SLIDES", 0);
 }
 
 function PRESS(x, y) {
@@ -62,11 +62,11 @@ function PRESS(x, y) {
 }
 
 function POSTER(x) {
-	FIELD(x, "POSTER", 1);
+	FIELD(x, "POSTER", 0);
 }
 
 function VIDEO(x) {
-	FIELD(x, "VIDEO", 1);
+	FIELD(x, "VIDEO", 0);
 }
 
 function INTERVIEW(x) {
@@ -75,15 +75,15 @@ function INTERVIEW(x) {
 
 
 function CODE(x) {
-	FIELD(x, "CODE", 2);
+	FIELD(x, "CODE", 0);
 }
 
 function DATA(x) {
-	FIELD(x, "DATA", 2);
+	FIELD(x, "DATA", 0);
 }
 
 function WEBSITE(x) {
-	FIELD(x, "WEBSITE", 2);
+	FIELD(x, "WEBSITE", 0);
 }
 
 
