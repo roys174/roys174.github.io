@@ -174,3 +174,8 @@ function CONFERENCE(url, name, award=undefined) {
 		
 	document.write('<i>In proceedings of <a href="'+url+'" target="_blank"><span style="color:CornflowerBlue">'+name+'</span></a></i>'+suffix+'<br>');
 }
+
+
+function TOP_PART() {
+document.write('<div class="split top" style="margin-left: 30px"><hr><div style="height: 180px"><div style="top: 100px; position: absolute;" class=page_titles>Roy Schwartz</div><img class="fluidimage" align="right" SRC="index_files/roy_schwartz.jpg" style="max-height:100%;max-width:100%;"/></div>');	
+}
