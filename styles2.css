@@ -73,3 +73,28 @@ highlight:hover {font-weight: 400; text-decoration: none; color: #11aaff; OUTLIN
 li {
 	margin-bottom:0.3cm;
 }
+
+
+.split {
+  width: 95%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  overflow-x: hidden;
+}
+
+.top {
+/*  padding-top: 20px;*/
+  height: 40%;
+  top: 0;
+}
+
+.bottom {
+/*    margin-top: 0px;*/
+  height: 58%;
+  bottom: 0;
+}
+
+.centered {
+  position: absolute;
+}
