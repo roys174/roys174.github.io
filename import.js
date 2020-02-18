@@ -13,7 +13,7 @@ var YEJIN = "<a href=\"http://homes.cs.washington.edu/~yejin/\" target=\"_blank\
 var YANNIS = "<a href=\"http://www.ikonstas.net/\" target=\"_blank\">Yannis Konstas</a>";
 var LI = "Li Zilles";
 var SUCHIN= "<a href=\"https://suchin.io/\" target=\"_blank\">Suchin Gururangan</a>";
-var DALLAS= "<a href=\"https://www.cs.cmu.edu/~dcard/\" target=\"_blank\">Dallas Card</a>";
+var DALLAS= "<a href=\"http://web.stanford.edu/~dcard/\" target=\"_blank\">Dallas Card</a>";
 var MATTP= "<a href=\"https://scholar.google.com/citations?user=K5nCPZwAAAAJ&hl\" target=\"_blank\">Matthew E. Peters</a>";
 var MARKN= "<a href=\"http://markneumann.xyz\" target=\"_blank\">Mark Neumann</a>";
 var ROB= "<a href=\"https://rloganiv.github.io\" target=\"_blank\">Robert Logan</a>";
@@ -22,7 +22,10 @@ var SAMEER= "<a href=\"http://sameersingh.org\" target=\"_blank\">Sameer Singh</
 var SWABHA = "<a href=\"http://www.cs.cmu.edu/~sswayamd/\" target=\"_blank\">Swabha Swayamdipta</a>";
 var JESSE = "<a href=\"http://www.cs.cmu.edu/~jessed/\" target=\"_blank\">Jesse Dodge</a>";
 var OMER = "<a href=\"https://levyomer.wordpress.com/\" target=\"_blank\">Omer Levy</a>";
-var NELSON = "<a href=\"https://homes.cs.washington.edu/~nfliu/\" target=\"_blank\">Nelson F. Liu</a>";
+var NELSON = "<a href=\"https://cs.stanford.edu/~nfliu/\" target=\"_blank\">Nelson F. Liu</a>";
+var GABRIELH = "<a href=\"http://gabrielilharco.com\" target=\"_blank\">Gabriel Ilharco</a>";
+var ALI = "<a href=\"https://homes.cs.washington.edu/~ali/\" target=\"_blank\">Ali Farhadi</a>";
+var HANNANEH = "<a href=\"https://homes.cs.washington.edu/~hannaneh/\" target=\"_blank\">Hannaneh Hajishirzi</a>";
 var CHENHAO = "<a href=\"https://chenhaot.com/\" target=\"_blank\">Chenhao Tan</a>";
 var SAMB = "<a href=\"https://www.nyu.edu/projects/bowman/\" target=\"_blank\">Sam Bowman</a>";
 var DONGYEOP = "<a href=\"http://www.cs.cmu.edu/~dongyeok/\" target=\"_blank\">Dongyeop Kang</a>";

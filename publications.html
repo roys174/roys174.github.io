@@ -53,6 +53,30 @@
 	</center>
 </div>
 
+<div class="all greenai">
+	<script>
+		YEAR(2020)
+	</script>
+</div>
+<ul>
+<div id="finetune_paper" class="papers all greenai">
+<li>
+<script>TITLE('Fine-Tuning Pretrained Language Models: Weight Initializations, Data Orders, and Early Stopping'); GREENAI();</script>
+<br>
+<i><script>document.write(JESSE+", "+GABRIELH+", "+ME+", "+ALI+", "+HANNANEH+" and "+NOAH)</script></i><br>
+<script>
+PDF('https://arxiv.org/abs/2002.06305')
+</script>
+<script>ABSTRACT("#finetune_abstract")</script>
+<script>BIB('papers/bib/finetune.bib')</script>
+<br>
+<div id="finetine_abstract" class="publications" style="display:none;">
+Fine-tuning pretrained contextual word embedding models to supervised downstream tasks has become commonplace in natural language processing. This process, however, is often brittle: even with the same hyperparameter values, distinct random seeds can lead to substantially different results. To better understand this phenomenon, we experiment with four datasets from the GLUE benchmark, fine-tuning BERT hundreds of times on each while varying only the random seeds. We find substantial performance increases compared to previously reported results, and we quantify how the performance of the best-found model varies as a function of the number of fine-tuning trials. Further, we examine two factors influenced by the choice of random seed: weight initialization and training data order. We find that both contribute comparably to the variance of out-of-sample performance, and that some weight initializations perform well across all tasks explored. On small datasets, we observe that many fine-tuning trials diverge part of the way through training, and we offer best practices for practitioners to stop training less promising runs early. We publicly release all of our experimental data, including training and validation scores for 2,100 trials, to encourage further analysis of training dynamics during fine-tuning.
+</div>
+</li>
+</div>
+</ul>
+
 <div class="all greenai understanding_nlp_models improving_evaluation word_representation">
 	<script>
 		YEAR(2019)
@@ -65,7 +89,7 @@
 <br>
 <i><script>document.write(ME+"*, "+JESSE+"*, "+NOAH+" and "+ORENE)</script></i><br>
 * Equal contribution<br>
-<i>Opinion Piece</i><br>
+To appear, <a href='https://cacm.acm.org' target="_blank")><i>CACM</i></a><br>
 <script>
 PDF('https://arxiv.org/abs/1907.10597')
 </script>
