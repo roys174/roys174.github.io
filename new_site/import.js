@@ -179,9 +179,9 @@ function CONFERENCE(url, name, award=undefined) {
 }
 
 
-function TOP_PART() {
+function TOP_PART(title='') {
 	HEADER();
-	document.write('<div class="top"><div style="height: 180px"><div style="top: 140px; left: 90 px;position: absolute;" class=page_titles>Schwartz Lab</div><img class="fluidimage" align="right" SRC="index_files/roy_schwartz.jpg" style="max-height:100%;max-width:100%;"/></div></div>');	
+	document.write('<div class="top"><div style="height: 180px"><div style="top: 140px; left: 90 px;position: absolute;" class=page_titles>Schwartz Lab<br><h1 class="h1_style">'+title+'</h1></div><img class="fluidimage" align="right" SRC="index_files/roy_schwartz.jpg" style="max-height:100%;max-width:100%;"/></div></div>');	
 }
 
 function HEADER() {
