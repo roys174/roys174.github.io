@@ -24,6 +24,11 @@ var JESSE = "<a href=\"http://www.cs.cmu.edu/~jessed/\" target=\"_blank\">Jesse 
 var OMER = "<a href=\"https://levyomer.wordpress.com/\" target=\"_blank\">Omer Levy</a>";
 var NELSON = "<a href=\"https://cs.stanford.edu/~nfliu/\" target=\"_blank\">Nelson F. Liu</a>";
 var GABRIELH = "<a href=\"http://gabrielilharco.com\" target=\"_blank\">Gabriel Ilharco</a>";
+var GABI = "<a href=\"https://gabrielstanovsky.github.io\" target=\"_blank\">Gabi Stanovsky</a>";
+var GAIL = "<a href=\"https://sgailw.cswp.cs.technion.ac.il\" target=\"_blank\">Gail Weiss</a>";
+var YOAV = "<a href=\"https://u.cs.biu.ac.il/~yogo/\" target=\"_blank\">Yoav Goldberg</a>";
+var ERANY = "<a href=\"http://www.cs.technion.ac.il/~yahave/\" target=\"_blank\">Eran Yahav</a>";
+var WILL = "<a href=\"https://lambdaviking.com\" target=\"_blank\">Will Merrill</a>";
 var ALI = "<a href=\"https://homes.cs.washington.edu/~ali/\" target=\"_blank\">Ali Farhadi</a>";
 var HANNANEH = "<a href=\"https://homes.cs.washington.edu/~hannaneh/\" target=\"_blank\">Hannaneh Hajishirzi</a>";
 var CHENHAO = "<a href=\"https://chenhaot.com/\" target=\"_blank\">Chenhao Tan</a>";
