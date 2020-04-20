@@ -66,12 +66,14 @@
 <i><script>document.write(ME+", "+GABI+", "+SWABHA+", "+JESSE+" and "+NOAH)</script></i><br>
 <script>
 CONFERENCE('https://acl2020.org', 'ACL 2020')
-//PDF('https://arxiv.org/abs/2002.06305')
+PDF('http://arxiv.org/abs/2004.07453')
 </script>
-<script>//ABSTRACT("#sledgehammer_abstract")</script>
+<script>ABSTRACT("#sledgehammer_abstract")</script>
 <script>BIB('papers/bib/sledgehammer.bib')</script>
+<script>CODE('https://github.com/allenai/sledgehammer')</script>
 <br>
 <div id="sledgehammer_abstract" class="publications" style="display:none;">
+As NLP models become larger, executing a trained model requires significant computational resources incurring monetary and environmental costs. To better respect a given inference budget, we propose a modification to contextual representation fine-tuning which, during inference, allows for an early (and fast) "exit" from neural network calculations for simple instances, and late (and accurate) exit for hard instances. To achieve this, we add classifiers to different layers of BERT and use their calibrated confidence scores to make early exit decisions. We test our proposed modification on five different datasets in two tasks: three text classification datasets and two natural language inference benchmarks. Our method presents a favorable speed/accuracy tradeoff in almost all cases, producing models which are up to five times faster than the state of the art, while preserving their accuracy. Our method also requires almost no additional training resources (in either time or parameters) compared to the baseline BERT model. Finally, our method alleviates the need for costly retraining of multiple models at different levels of efficiency; we allow users to control the inference speed/accuracy tradeoff using a single trained model, by setting a single variable at inference time. We publicly release our code.
 </div>
 </li>
 </div>
@@ -79,7 +81,7 @@ CONFERENCE('https://acl2020.org', 'ACL 2020')
 <li>
 <script>TITLE('A Mixture of h-1 Heads is Better than h Heads');</script>
 <br>
-<i><script>document.write(HAO+", Dianqi Li, "+ME+", and "+NOAH)</script></i><br>
+<i><script>document.write(HAO+", "+ME+", Dianqi Li, and "+NOAH)</script></i><br>
 <script>
 CONFERENCE('https://acl2020.org', 'ACL 2020')
 //PDF('https://arxiv.org/abs/2002.06305')
@@ -100,10 +102,11 @@ CONFERENCE('https://acl2020.org', 'ACL 2020')
 CONFERENCE('https://acl2020.org', 'ACL 2020')
 //PDF('https://arxiv.org/abs/2002.06305')
 </script>
-<script>//ABSTRACT("#rnn_hierarchy_abstract")</script>
+<script>ABSTRACT("#rnn_hierarchy_abstract")</script>
 <script>BIB('papers/bib/rnn_hierarchy.bib')</script>
 <br>
 <div id="rnn_hierarchy_abstract" class="publications" style="display:none;">
+We develop a formal hierarchy of the expressive capacity of RNN architectures. The hierarchy is based around two formal properties: space complexity, which is a measure of the RNN's memory, and rational recurrence, defined as whether the recurrent update can be described by a weighted finite-state machine. We place several RNN variants within this hierarchy. For example, we prove that the LSTM is not rational, which formally separates it from the related QRNN (Bradbury et al., 2016). We also show how the expressive capacity of these models is expanded by stacking multiple layers or composing them with different pooling functions.  Our results build on the theory of "saturated" RNNs (Merrill, 2019). While formally extending these findings to unsaturated RNNs is left to future work, we hypothesize that the practical learnable capacity of unsaturated RNNs obeys a similar hierarchy. Experimental findings from training unsaturated networks on formal languages support this conjecture.
 </div>
 </li>
 </div>
