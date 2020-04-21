@@ -100,10 +100,12 @@ CONFERENCE('https://acl2020.org', 'ACL 2020')
 <i><script>document.write(WILL+", "+GAIL+", "+YOAV+", "+ME+", "+NOAH+" and "+ERANY)</script></i><br>
 <script>
 CONFERENCE('https://acl2020.org', 'ACL 2020')
-//PDF('https://arxiv.org/abs/2002.06305')
+PDF('https://arxiv.org/abs/2004.08500')
 </script>
 <script>ABSTRACT("#rnn_hierarchy_abstract")</script>
 <script>BIB('papers/bib/rnn_hierarchy.bib')</script>
+<br>
+<script>PRESS('Blog', 'https://lambdaviking.com/post/rr-hierarchy/')</script>
 <br>
 <div id="rnn_hierarchy_abstract" class="publications" style="display:none;">
 We develop a formal hierarchy of the expressive capacity of RNN architectures. The hierarchy is based around two formal properties: space complexity, which is a measure of the RNN's memory, and rational recurrence, defined as whether the recurrent update can be described by a weighted finite-state machine. We place several RNN variants within this hierarchy. For example, we prove that the LSTM is not rational, which formally separates it from the related QRNN (Bradbury et al., 2016). We also show how the expressive capacity of these models is expanded by stacking multiple layers or composing them with different pooling functions.  Our results build on the theory of "saturated" RNNs (Merrill, 2019). While formally extending these findings to unsaturated RNNs is left to future work, we hypothesize that the practical learnable capacity of unsaturated RNNs obeys a similar hierarchy. Experimental findings from training unsaturated networks on formal languages support this conjecture.
