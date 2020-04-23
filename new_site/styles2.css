@@ -13,7 +13,7 @@ body
   font-family:'"Helvetica Neue","Arial","sans-serif"';
   font-size: 24px;
   font-style: normal;
-  line-height: 1.7em;
+  line-height: 1.4em;
   letter-spacing: 0px;
   font-weight: 400;
   COLOR: #555555;
@@ -41,8 +41,8 @@ body
 	text-indent:50px;
 }
 
-BODY 	A:link {font-weight: 400; text-decoration: uline; color: #333333; OUTLINE: 0;}
-BODY	A:visited {font-weight: 400; text-decoration: none; color: #333333; OUTLINE: 0;}
+BODY 	A:link {font-weight: 400; text-decoration: none; color: blue; OUTLINE: 0;}
+BODY	A:visited {font-weight: 400; text-decoration: none; color:blue; OUTLINE: 0;}
 BODY	A:active {font-weight: 400; text-decoration: none; color: #333333; OUTLINE: 0;}
 BODY	A:hover {font-weight: 400; color: #11aaff; OUTLINE: 0;}
 
@@ -60,14 +60,14 @@ highlight:hover {font-weight: 400; text-decoration: none; color: #11aaff; OUTLIN
 .publications
 {
   margin-bottom:12.0pt;
-  margin-top:1em;
+  margin-top:0em;
   line-height: 1.5;
   text-align: justify
 }
 
 
 .page_titles{
-	font-size:45.0pt;
+	font-size:36.0pt;
 	color:#002266;
 	font-weight: 400;
 	max-width: 65%;
@@ -78,7 +78,7 @@ highlight:hover {font-weight: 400; text-decoration: none; color: #11aaff; OUTLIN
 }
 
 .h1_style {
-	font-size:48px;
+	font-size:30.0pt;
 	color:#8E1B27;
 }
 
@@ -101,8 +101,8 @@ li {
 }
 
 .top {
-/*  padding-top: 20px;*/
-  height: 40%;
+ margin-top: 00px;
+  /* height: 100%; */
   top: 0;
 }
 
@@ -142,13 +142,23 @@ main {
     padding: 50px;
   }
   .col-2 {
-    max-width: 40%;
+    max-width: 49.5%;
     padding: 50px;
 	}
 
 }
 
+.people_link {
+  color:#333333;
+}
 
+.people_link a:visited {
+  color:#333333;  
+}
+
+.people_link a:link {
+  color:#333333;  
+}
 
 .center {
   display: block;

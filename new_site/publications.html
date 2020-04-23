@@ -17,17 +17,16 @@
 <script>TOP_PART('Publications (on <a href="http://scholar.google.com/citations?user=wvfWo9IAAAAJ&amp;hl=en" target="_blank">google scholar</a>, <a href="https://www.semanticscholar.org/author/Roy-Schwartz/4671928" target="_blank">semantic scholar</a>)',
 );</script>
 
-
-<div class="split bottom">
+<!-- <div class="split bottom"> -->
 	
 <!--<h2 class='h2_style'>Publications (on <a <a href="https://www.semanticscholar.org/author/Roy-Schwartz/1702335" target="_blank">semantic scholar</a>, <a href="http://scholar.google.com/citations?user=wvfWo9IAAAAJ&amp;hl=en" target="_blank">google scholar</a>)</h2>-->
 <!-- <h1 class='h1_style' align=center></h1> -->
-	<center>
+	<!-- <center>
 		<b>Filter by topic: </b>
         <script>
 			HASHTAG("ALL", 10, true); GREENAI(true); RATIONAL_RECURRENCES(true); ARTIFACTS(true); EMBEDDINGS(true);
 		</script>
-	</center>
+	</center> -->
 
 <div class="all greenai">
 	<script>
@@ -35,6 +34,58 @@
 	</script>
 </div>
 <ul>
+<div id="sledgehammer_paper" class="papers all greenai">
+<li>
+<script>TITLE('The Right Tool for the Job: Matching Model and Instance Complexities'); GREENAI();</script>
+<br>
+<i><script>document.write(ME+", "+GABI+", "+SWABHA+", "+JESSE+" and "+NOAH)</script></i><br>
+<script>
+CONFERENCE('https://acl2020.org', 'ACL 2020')
+PDF('http://arxiv.org/abs/2004.07453')
+</script>
+<script>ABSTRACT("#sledgehammer_abstract")</script>
+<script>BIB('papers/bib/sledgehammer.bib')</script>
+<script>CODE('https://github.com/allenai/sledgehammer')</script>
+<br>
+<div id="sledgehammer_abstract" class="publications" style="display:none;">
+As NLP models become larger, executing a trained model requires significant computational resources incurring monetary and environmental costs. To better respect a given inference budget, we propose a modification to contextual representation fine-tuning which, during inference, allows for an early (and fast) "exit" from neural network calculations for simple instances, and late (and accurate) exit for hard instances. To achieve this, we add classifiers to different layers of BERT and use their calibrated confidence scores to make early exit decisions. We test our proposed modification on five different datasets in two tasks: three text classification datasets and two natural language inference benchmarks. Our method presents a favorable speed/accuracy tradeoff in almost all cases, producing models which are up to five times faster than the state of the art, while preserving their accuracy. Our method also requires almost no additional training resources (in either time or parameters) compared to the baseline BERT model. Finally, our method alleviates the need for costly retraining of multiple models at different levels of efficiency; we allow users to control the inference speed/accuracy tradeoff using a single trained model, by setting a single variable at inference time. We publicly release our code.
+</div>
+</li>
+</div>
+<div id="mae_paper" class="papers all">
+<li>
+<script>TITLE('A Mixture of h-1 Heads is Better than h Heads');</script>
+<br>
+<i><script>document.write(HAO+", "+ME+", Dianqi Li, and "+NOAH)</script></i><br>
+<script>
+CONFERENCE('https://acl2020.org', 'ACL 2020')
+//PDF('https://arxiv.org/abs/2002.06305')
+</script>
+<script>//ABSTRACT("#mae_abstract")</script>
+<script>BIB('papers/bib/mae.bib')</script>
+<br>
+<div id="mae_abstract" class="publications" style="display:none;">
+</div>
+</li>
+</div>
+<div id="rnn_hierarchy_paper" class="papers all understanding_nlp_models">
+		<li>
+		<script>TITLE('A Formal Hierarchy of RNN Architectures');RATIONAL_RECURRENCES();</script>
+		<br>
+		<i><script>document.write(WILL+", "+GAIL+", "+YOAV+", "+ME+", "+NOAH+" and "+ERANY)</script></i><br>
+		<script>
+		CONFERENCE('https://acl2020.org', 'ACL 2020')
+		PDF('https://arxiv.org/abs/2004.08500')
+		</script>
+		<script>ABSTRACT("#rnn_hierarchy_abstract")</script>
+		<script>BIB('papers/bib/rnn_hierarchy.bib')</script>
+		<script>PRESS('blog', 'https://lambdaviking.com/post/rr-hierarchy/')</script>
+		<br>
+		<div id="rnn_hierarchy_abstract" class="publications" style="display:none;">
+		We develop a formal hierarchy of the expressive capacity of RNN architectures. The hierarchy is based around two formal properties: space complexity, which is a measure of the RNN's memory, and rational recurrence, defined as whether the recurrent update can be described by a weighted finite-state machine. We place several RNN variants within this hierarchy. For example, we prove that the LSTM is not rational, which formally separates it from the related QRNN (Bradbury et al., 2016). We also show how the expressive capacity of these models is expanded by stacking multiple layers or composing them with different pooling functions.  Our results build on the theory of "saturated" RNNs (Merrill, 2019). While formally extending these findings to unsaturated RNNs is left to future work, we hypothesize that the practical learnable capacity of unsaturated RNNs obeys a similar hierarchy. Experimental findings from training unsaturated networks on formal languages support this conjecture.
+		</div>
+</li>
+</div>		
 <div id="finetune_paper" class="papers all greenai">
 <li>
 <script>TITLE('Fine-Tuning Pretrained Language Models: Weight Initializations, Data Orders, and Early Stopping'); GREENAI();</script>
@@ -61,25 +112,26 @@ Fine-tuning pretrained contextual word embedding models to supervised downstream
 <ul>
 <div id="greenai_paper" class="papers all greenai">
 <li>
-<span style='color:green'><b>Green AI</b> <script>GREENAI();</script></span>
+<span style='color:green'><b>Green AI</b></span> <script>GREENAI();</script>
 <br>
 <i><script>document.write(ME+"*, "+JESSE+"*, "+NOAH+" and "+ORENE)</script></i><br>
 * Equal contribution<br>
-To appear, <a href='https://cacm.acm.org' target="_blank")><i>CACM</i></a><br>
+<script>CONFERENCE('https://cacm.acm.org', "CACM", undefined, "To appear, ");</script>
 <script>
 PDF('https://arxiv.org/abs/1907.10597')
 </script>
 <script>ABSTRACT("#greenai_abstract")</script>
 <script>BIB('papers/bib/greenai.bib')</script>
 <br>
-<script>PRESS('NYT', 'https://www.nytimes.com/2019/09/26/technology/ai-computer-expense.html')</script>
-<script>PRESS('Slate', 'https://slate.com/technology/2019/09/artificial-intelligence-climate-change-carbon-emissions-roy-schwartz.html')</script>
-	<script>PRESS('VentureBeat', 'https://venturebeat.com/2019/07/25/researchers-propose-ways-to-measure-and-encourage-energy-efficient-ai/')</script>
-<script>PRESS('GeekWire', 'https://www.geekwire.com/2019/amid-rapid-rise-ai-resource-needs-ai2-campaigns-make-easier-green/')</script>
-<script>PRESS('Fortune', 'https://fortune.com/2019/07/30/artificial-intelligence-content-moderation/')</script>
-<script>PRESS('Synced', 'https://syncedreview.com/2019/07/31/greening-ai-new-ai2-initiative-promotes-model-efficiency/')</script>
-<script>PRESS('MIT Tech Review', 'https://www.technologyreview.com/f/614056/ai-research-has-an-environment-climate-toll/')</script>
-<script>PRESS('Haaretz (Hebrew)', 'https://www.haaretz.co.il/captain/software/.premium-1.8194763')</script>
+<b>Press coverage:</b> 
+<script>PRESS('NYT', 'https://www.nytimes.com/2019/09/26/technology/ai-computer-expense.html')</script>,
+<script>PRESS('Slate', 'https://slate.com/technology/2019/09/artificial-intelligence-climate-change-carbon-emissions-roy-schwartz.html')</script>,
+<script>PRESS('VentureBeat', 'https://venturebeat.com/2019/07/25/researchers-propose-ways-to-measure-and-encourage-energy-efficient-ai/')</script>,
+<script>PRESS('GeekWire', 'https://www.geekwire.com/2019/amid-rapid-rise-ai-resource-needs-ai2-campaigns-make-easier-green/')</script>,
+<script>PRESS('Fortune', 'https://fortune.com/2019/07/30/artificial-intelligence-content-moderation/')</script>,
+<script>PRESS('Synced', 'https://syncedreview.com/2019/07/31/greening-ai-new-ai2-initiative-promotes-model-efficiency/')</script>,
+<script>PRESS('MIT Tech Review', 'https://www.technologyreview.com/f/614056/ai-research-has-an-environment-climate-toll/')</script>,
+<script>PRESS('Haaretz (Hebrew)', 'https://www.haaretz.co.il/captain/software/.premium-1.8194763')</script>,
 <script>PRESS('Ynet (Hebrew)', 'https://www.ynet.co.il/articles/0,7340,L-5567808,00.html')</script>
 <div id="greenai_abstract" class="publications" style="display:none;">
 The computations required for deep learning research have been doubling every few months, resulting in an estimated 300,000x increase from 2012 to 2018 [2]. These computations have a surprisingly large carbon footprint [38]. Ironically, deep learning was inspired by the human brain, which is remarkably energy efficient. Moreover, the financial cost of the computations can make it difficult for academics, students, and researchers, in particular those from emerging economies, to engage in deep learning research. 
@@ -102,6 +154,7 @@ PDF('https://arxiv.org/abs/1909.03004')
 <!--<script>SLIDES('')</script> -->
 <script>CODE('https://github.com/allenai/allentune')</script>
 <br>
+<b>Press coverage:</b> 
 <script>PRESS('Wired', 'https://www.wired.com/story/artificial-intelligence-confronts-reproducibility-crisis/')</script>
 <div id="showyourwork_abstract" class="publications" style="display:none;">
 Research in natural language processing proceeds, in part, by demonstrating that new models achieve superior performance (e.g.,  accuracy) on held-out test data,  compared to previous  results.   In  this  paper,  we  demonstrate that test-set performance scores alone are insufficient  for  drawing  accurate  conclusions about which model performs best.  We argue for reporting additional details, especially performance  on  validation  data  obtained  during model development.  We present a novel technique  for  doing  so: <i>expected  validation  performance</i> of the best-found model as a function  of  computation  budget  (i.e.,  the  number of hyperparameter search trials or the overall training  time).   Using  our  approach,  we  find multiple recent model comparisons where authors would have reached a different conclusion  if  they  had  used  more  (or  less)  computation. Our  approach  also  allows  us  to  estimate  the  amount  of  computation  required  to obtain a given accuracy; applying it to several recently published results yields massive variation across papers, from hours to weeks.  We conclude with a set of best practices for reporting  experimental  results  which  allow  for robust future comparisons, and provide code to allow researchers to use our technique.
@@ -230,8 +283,9 @@ Despite the tremendous empirical success of neural models in natural language pr
 <script>DATA('https://github.com/rowanz/swagaf/tree/master/data','data')</script>
 <script>WEBSITE('https://rowanzellers.com/swag/','website')</script>
 <br>
-<script>PRESS('NYT', 'https://www.nytimes.com/2018/11/18/technology/artificial-intelligence-language.html')</script>
-<script>PRESS('TheMarker (Hebrew)', 'https://www.themarker.com/wallstreet/.premium-1.6662358')</script>
+<b>Press coverage:</b> 
+<script>PRESS('NYT', 'https://www.nytimes.com/2018/11/18/technology/artificial-intelligence-language.html')</script>,
+<script>PRESS('TheMarker (Hebrew)', 'https://www.themarker.com/wallstreet/.premium-1.6662358')</script>,
 <script>PRESS('Agenda Digitale (Italian)', 'https://www.agendadigitale.eu/cultura-digitale/lintelligenza-artificiale-sfida-il-buon-senso-e-le-emozioni-ecco-perche/')</script>
 <div id="swag_abstract" class="publications" style="display:none;">
 Given a partial description like "she opened the hood of the car", humans can reason about the situation and anticipate what might come next ("then, she examined the engine"). In this paper, we introduce the task of grounded commonsense inference, unifying natural language inference and commonsense reasoning.<br>We present SWAG, a new dataset with 113k multiple choice questions about a rich spectrum of grounded situations. To address the recurring challenges of the annotation artifacts and human biases found in many existing datasets, we propose Adversarial Filtering (AF), a novel procedure that constructs a de-biased dataset by iteratively training an ensemble of stylistic classifiers, and using them to filter the data. To account for the aggressive adversarial filtering, we use state-of-the-art language models to massively oversample a diverse set of potential counterfactuals. Empirical results demonstrate that while humans can solve the resulting inference problems with high accuracy (88%), various competitive models struggle on our task. We provide comprehensive analysis that indicates significant opportunities for future research.
@@ -349,7 +403,7 @@ A writer's style depends not just on personal traits but also on her intent and 
 <li>
 <script>TITLE('Automatic selection of context configurations for improved (and fast) class-specific word representations'); EMBEDDINGS();</script>
 <br>
-<i><a href='https://sites.google.com/site/ivanvulic/' target="_blank")>Ivan Vulić</a>, <script>document.write(ME+", "+ARI+", "+ROI)</script> and <a href="http://www.cl.cam.ac.uk/~alk23/" target="_blank">Anna Korhonen</a></i><br> 
+<i><script>document.write(IVAN+", "+ME+", "+ARI+", "+ROI+" and "+ANNAK)</script></i><br> 
 <script>CONFERENCE('http://www.conll.org/2017/', 'CoNLL 2017')</script>
 <script>PDF('http://arxiv.org/abs/1608.05528')</script>
 <script>ABSTRACT('#context_config_abstract')</script>
@@ -510,8 +564,7 @@ Classifying nouns into semantic categories (e.g., animals, food) is an important
 <script>TITLE('Authorship Attribution of Micro-Messages')</script>
 
 <br>
-<i><script>document.write(ME)</script>, <a href="http://people.seas.harvard.edu/~orentsur" target="_blank">Oren Tsur</a>, <script>document.write(ARI)</script> and <a
-href="http://u.cs.biu.ac.il/~koppel/" target="_blank">Moshe Koppel</a></i><br> 
+<i><script>document.write(ME+", "+ORENT+", "+ARI+" and "+KOPPEL)</script></i><br> 
 <script>CONFERENCE('http://mirror.aclweb.org/emnlp2013/', 'EMNLP 2013')</script>
 <script>PDF('papers/twitter_authorship/twitter_authorship_emnlp4.pdf')</script>
 <script>ABSTRACT('#twitter_authorship_abstract')</script>
@@ -573,7 +626,7 @@ Dependency parsing is a central NLP task. In this paper we show that the common 
 
 </div>
 </div>
-</div>
+<!-- </div> -->
 
 </body>
 </html>
