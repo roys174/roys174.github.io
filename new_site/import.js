@@ -180,8 +180,10 @@ function URL(x, y, z) {
 }
 
 function email() {
-    document.write('r o y s <img border=0 width=35 height=auto src='+HOME+'index_files/strudel.jpg> allenai . org');
+	document.write('r o y s <img border=0 width=35 height=auto src='+HOME+'index_files/strudel.jpg> allenai . org ');
+	document.write('<a href="https://twitter.com/royschwartz02" target="_blank"><img src="index_files/twitter.png" style="margin-bottom:0px;height:50px;border:0px;display:inline">');
 }
+
 
 function CONFERENCE(url, name, award=undefined, prefix="In proceedings of ") {
 	var suffix = '';
