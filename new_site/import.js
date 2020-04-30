@@ -46,7 +46,8 @@ var ME = "<span><b>Roy Schwartz</b></span>";
 var ME_LINK = "<a href=" + HOME + " target=\"_blank\">Roy Schwartz</a>";
 
 // var colors = ["#9b59b6", "#3498db", "#95a5a6", "#e74c3c", "#34495e", "#2ecc71", "#006600", "#00CCCC", "#CC0066", "#FB8B24", "#8CADA7"]
-var colors = ["white", "white","white","white","white","white","white","white","white","white"]
+var tag_color = "white";
+var colors = [tag_color, tag_color,tag_color,tag_color,tag_color,tag_color,tag_color,tag_color,tag_color,tag_color]
 
 function PERSON(x,y) {
 	return ('<a href="'+x+'" target="_blank"><span class="people_link">'+y+'</span></a>');
@@ -59,48 +60,49 @@ function YEAR(y) {
 }
 
 function PDF(x) {
-	FIELD(x, "pdf", 0)
+	FIELD(x, "pdf")
 }
 
 function ABSTRACT(x) {
-	document.write(' <a href="#" onclick="$('+ "'"+x+"'"+').toggle();return false;"><span>abstract</span></a> ');
+	FIELD('#', 'abstract', '&nbsp&nbsp', 'onclick="$('+ "'"+x+"'"+').toggle();return false;"');
+	// document.write(' <a href="#" onclick="$('+ "'"+x+"'"+').toggle();return false;"><span>abstract</span></a> ');
 }
 
 function BIB(x) {
-	FIELD(x, "bib", 0);
+	FIELD(x, "bib");
 }
 
 function SLIDES(x) {
-	FIELD(x, "slides", 0);
+	FIELD(x, "slides");
 }
 
 function PRESS(x, y) {
-	FIELD(y, x, 5);
+	FIELD(y, x, '');
 }
 
 function POSTER(x) {
-	FIELD(x, "poster", 0);
+	FIELD(x, "poster");
 }
 
 function VIDEO(x) {
-	FIELD(x, "video", 0);
+	FIELD(x, "video");
 }
 
 function INTERVIEW(x) {
-	FIELD(x, "podcast interview", 5);
+	FIELD(x, "podcast interview");
 }
 
 
 function CODE(x) {
-	FIELD(x, "code", 0);
+	FIELD(x, "code");
 }
 
 function DATA(x) {
-	FIELD(x, "data", 0);
+	FIELD(x, "data");
 }
 
 function WEBSITE(x) {
-	FIELD(x, "website", 0);
+	FIELD(x, "website");
 }
 
 
@@ -121,8 +123,10 @@ function EMBEDDINGS(filter) {
 }
 
 
-function FIELD(x, y, bgcolor_index) {
-	document.write("<a href='"+ x +"' target='_blank'  class='internal_link'><span class='internal_link'>"+y+"</span></a>");
+function FIELD(x, y, suffix="&nbsp&nbsp", extra_args="target='_blank'") {
+	document.write("<a href="+ x +' ' + extra_args+" class='internal_link'><span class='internal_link'>"+y+"</span></a>"+suffix);
+	// document.write('<a href="#"><span>abstract</span></a> ');
+
 }
 
 function HASHTAG(x, bgcolor_index, filter=false) {
@@ -139,7 +143,7 @@ function HASHTAG(x, bgcolor_index, filter=false) {
 		}
 	}
 	
-	document.write(" "+prefix+"<span style='background-color:" + colors[bgcolor_index] +";'><i> #"+x+" </i></span>"+suffix+" ");	
+	document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+prefix+"<span style='color:gray;background-color:" + colors[bgcolor_index] +";'><i> #"+x+" </i></span>"+suffix+" ");	
 }
 
 function filter_list(name) {
@@ -163,11 +167,11 @@ function filter_list(name) {
 }
 
 function TITLE(x) {
-	document.write('<span style="color:#3366cc"><b>' + x + "</b></span>");
+	document.write('<span><b>' + x + "</b></span>");
 }
 
 function TITLEF(x, y) {
-	document.write("<a href='" + x +"'"+'><span style="color:#3366cc"><b>' + y + "</b></span></a>");
+	document.write("<a href='" + x +"'"+'><span><b>' + y + "</b></span></a>");
 }
 
 
@@ -179,10 +183,10 @@ function URL(x, y, z) {
 	document.write("<a href='" + x + y + "' " + extra + ">" + z + "</a>");
 }
 
-function email() {
-	document.write('r o y s <img border=0 width=35 height=auto src='+HOME+'index_files/strudel.jpg> allenai . org ');
-	document.write('<a href="https://twitter.com/royschwartz02" target="_blank"><img src="index_files/twitter.png" style="margin-bottom:0px;height:50px;border:0px;display:inline">');
-}
+// function email() {
+// 	document.write('r o y s <img border=0 width=35 height=auto src='+HOME+'index_files/strudel.jpg> allenai . org ');
+// 	document.write('&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://twitter.com/royschwartz02" target="_blank"><img src="index_files/twitter.png" style="margin-bottom:0px;height:30px;border:0px;display:inline"> @royschwartz2 </a>');
+// }
 
 
 function CONFERENCE(url, name, award=undefined, prefix="In proceedings of ") {
@@ -197,7 +201,7 @@ function CONFERENCE(url, name, award=undefined, prefix="In proceedings of ") {
 
 function TOP_PART(title='') {
 	HEADER();
-	document.write('<div class="top"><div style="height: 180px"><div style="top: 140px; left: 90 px;position: absolute;" class=page_titles>Schwartz Lab<br><h1 class="h1_style">'+title+'</h1></div><img class="fluidimage" align="right" SRC="index_files/roy_schwartz.jpg" style="max-height:100%;max-width:100%;"/></div></div>');	
+	document.write('<div class="top"><div class="top_style"><div style="top: 100px; align:top-left;position: absolute;max-width:100%" class="page_titles">Schwartz Lab<br><h1 class="h1_style" style="max-width:90%">'+title+'</h1></div><img class="fluidimage" align="right" SRC="index_files/roy_schwartz.jpg" style="max-height:100%;max-width:25%;"/></div></div>');	
 }
 
 function HEADER() {
