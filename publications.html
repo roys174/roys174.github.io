@@ -70,20 +70,20 @@ Multi-head attentive neural architectures have achieved state-of-the-art results
 </div>
 <div id="rnn_hierarchy_paper" class="papers all understanding_nlp_models">
 		<li>
-		<script>TITLE('A Formal Hierarchy of RNN Architectures');RATIONAL_RECURRENCES();</script>
+<script>TITLE('A Formal Hierarchy of RNN Architectures');RATIONAL_RECURRENCES();</script>
 		<br>
-		<i><script>document.write(WILL+", "+GAIL+", "+YOAV+", "+ME+", "+NOAH+" and "+ERANY)</script></i><br>
+<i><script>document.write(WILL+", "+GAIL+", "+YOAV+", "+ME+", "+NOAH+" and "+ERANY)</script></i><br>
 		<script>
-		CONFERENCE('https://acl2020.org', 'ACL 2020')
-		PDF('https://arxiv.org/abs/2004.08500')
-		</script>
-		<script>ABSTRACT("#rnn_hierarchy_abstract")</script>
-		<script>BIB('papers/bib/rnn_hierarchy.bib')</script>
-		<script>PRESS('blog', 'https://lambdaviking.com/post/rr-hierarchy/')</script>
-		<br>
-		<div id="rnn_hierarchy_abstract" class="publications" style="display:none;">
-		We develop a formal hierarchy of the expressive capacity of RNN architectures. The hierarchy is based around two formal properties: space complexity, which is a measure of the RNN's memory, and rational recurrence, defined as whether the recurrent update can be described by a weighted finite-state machine. We place several RNN variants within this hierarchy. For example, we prove that the LSTM is not rational, which formally separates it from the related QRNN (Bradbury et al., 2016). We also show how the expressive capacity of these models is expanded by stacking multiple layers or composing them with different pooling functions.  Our results build on the theory of "saturated" RNNs (Merrill, 2019). While formally extending these findings to unsaturated RNNs is left to future work, we hypothesize that the practical learnable capacity of unsaturated RNNs obeys a similar hierarchy. Experimental findings from training unsaturated networks on formal languages support this conjecture.
-		</div>
+CONFERENCE('https://acl2020.org', 'ACL 2020')
+PDF('https://arxiv.org/abs/2004.08500')
+</script>
+<script>ABSTRACT("#rnn_hierarchy_abstract")</script>
+<script>BIB('papers/bib/rnn_hierarchy.bib')</script>
+<script>PRESS('blog', 'https://lambdaviking.com/post/rr-hierarchy/')</script>
+<br>
+<div id="rnn_hierarchy_abstract" class="publications" style="display:none;">
+We develop a formal hierarchy of the expressive capacity of RNN architectures. The hierarchy is based around two formal properties: space complexity, which is a measure of the RNN's memory, and rational recurrence, defined as whether the recurrent update can be described by a weighted finite-state machine. We place several RNN variants within this hierarchy. For example, we prove that the LSTM is not rational, which formally separates it from the related QRNN (Bradbury et al., 2016). We also show how the expressive capacity of these models is expanded by stacking multiple layers or composing them with different pooling functions.  Our results build on the theory of "saturated" RNNs (Merrill, 2019). While formally extending these findings to unsaturated RNNs is left to future work, we hypothesize that the practical learnable capacity of unsaturated RNNs obeys a similar hierarchy. Experimental findings from training unsaturated networks on formal languages support this conjecture.
+</div>
 </li>
 </div>		
 <div id="finetune_paper" class="papers all greenai">
@@ -116,7 +116,7 @@ Fine-tuning pretrained contextual word embedding models to supervised downstream
 <br>
 <i><script>document.write(ME+"*, "+JESSE+"*, "+NOAH+" and "+ORENE)</script></i><br>
 * Equal contribution<br>
-<script>CONFERENCE('https://cacm.acm.org', "CACM", undefined, "To appear, ");</script>
+<script>CONFERENCE('https://cacm.acm.org', 'CACM', undefined, "To appear, ");</script>
 <script>
 PDF('https://arxiv.org/abs/1907.10597')
 </script>
@@ -134,9 +134,7 @@ PDF('https://arxiv.org/abs/1907.10597')
 <script>PRESS('Haaretz (Hebrew)', 'https://www.haaretz.co.il/captain/software/.premium-1.8194763')</script>,
 <script>PRESS('Ynet (Hebrew)', 'https://www.ynet.co.il/articles/0,7340,L-5567808,00.html')</script>
 <div id="greenai_abstract" class="publications" style="display:none;">
-The computations required for deep learning research have been doubling every few months, resulting in an estimated 300,000x increase from 2012 to 2018 [2]. These computations have a surprisingly large carbon footprint [38]. Ironically, deep learning was inspired by the human brain, which is remarkably energy efficient. Moreover, the financial cost of the computations can make it difficult for academics, students, and researchers, in particular those from emerging economies, to engage in deep learning research. 
-<br>
-This position paper advocates a practical solution by making <b>efficiency</b> an evaluation criterion for research alongside accuracy and related measures. In addition, we propose reporting the financial cost or "price tag" of developing, training, and running models to provide baselines for the investigation of increasingly efficient methods. Our goal is to make AI both greener and more inclusive---enabling any inspired undergraduate with a laptop to write high-quality research papers. <span style='color:green'>Green AI</span> is an emerging focus at the Allen Institute for AI.
+The computations required for deep learning research have been doubling every few months, resulting in an estimated 300,000x increase from 2012 to 2018 [2]. These computations have a surprisingly large carbon footprint [38]. Ironically, deep learning was inspired by the human brain, which is remarkably energy efficient. Moreover, the financial cost of the computations can make it difficult for academics, students, and researchers, in particular those from emerging economies, to engage in deep learning research.<br>This position paper advocates a practical solution by making <b>efficiency</b> an evaluation criterion for research alongside accuracy and related measures. In addition, we propose reporting the financial cost or "price tag" of developing, training, and running models to provide baselines for the investigation of increasingly efficient methods. Our goal is to make AI both greener and more inclusive---enabling any inspired undergraduate with a laptop to write high-quality research papers. <span style='color:green'>Green AI</span> is an emerging focus at the Allen Institute for AI.
 </div>
 </li>
 </div>
@@ -229,12 +227,7 @@ PDF('https://arxiv.org/abs/1904.02668')
 <script>SLIDES('https://cs.stanford.edu/~nfliu/papers/liu+schwartz+smith.naacl2019.slides.pdf')</script>
 <script>CODE('https://github.com/nelson-liu/inoculation-by-finetuning')</script>
 <div id="inoculation_abstract" class="publications" style="display:none;">
-Several datasets have recently been constructed to expose brittleness in models trained on existing benchmarks.
-While model performance on these <i>challenge datasets</i> is significantly lower compared to the original benchmark, it is unclear what particular weaknesses they reveal.
-For example, a challenge dataset may be difficult because it targets phenomena that current models cannot capture, or because it simply exploits blind spots in a model's specific training set.
-We introduce <i>inoculation by fine-tuning</i>, a new analysis method for studying challenge datasets by exposing models (the metaphorical patient) to a small amount of data from the challenge dataset (a metaphorical pathogen) and assessing how well they can adapt.
-We apply our method to analyze the NLI "stress tests" (Naik et al., 2018) and the Adversarial SQuAD dataset (Jia and Liang,2017).
-We show that after slight exposure, some of these datasets are no longer challenging, while others remain difficult. Our results indicate that failures on challenge datasets may lead to very different conclusions about models, training datasets, and the challenge datasets themselves.
+Several datasets have recently been constructed to expose brittleness in models trained on existing benchmarks. While model performance on these <i>challenge datasets</i> is significantly lower compared to the original benchmark, it is unclear what particular weaknesses they reveal. For example, a challenge dataset may be difficult because it targets phenomena that current models cannot capture, or because it simply exploits blind spots in a model's specific training set. We introduce <i>inoculation by fine-tuning</i>, a new analysis method for studying challenge datasets by exposing models (the metaphorical patient) to a small amount of data from the challenge dataset (a metaphorical pathogen) and assessing how well they can adapt. We apply our method to analyze the NLI "stress tests" (Naik et al., 2018) and the Adversarial SQuAD dataset (Jia and Liang,2017). We show that after slight exposure, some of these datasets are no longer challenging, while others remain difficult. Our results indicate that failures on challenge datasets may lead to very different conclusions about models, training datasets, and the challenge datasets themselves.
 </div>
 </li>
 </div>
@@ -267,9 +260,6 @@ Despite the tremendous empirical success of neural models in natural language pr
 <div id="swag_paper" class="papers all improved_evaluation">	
 <li>
 <script>TITLE('SWAG: A Large-Scale Adversarial Dataset for Grounded Commonsense Inference'); ARTIFACTS();</script>
-<!--
-<i>SWAG: A Large-Scale Adversarial Dataset for Grounded Commonsense Inference</i>
--->
 <br>
 <i><script>document.write(ROWAN+", "+YONATAN+", "+ME+" and "+YEJIN)</script></i><br>
 <script>CONFERENCE('http://emnlp2018.org//', 'EMNLP 2018')</script>
@@ -305,11 +295,7 @@ Given a partial description like "she opened the hood of the car", humans can re
 <script>POSTER('papers/sopa/sopa_poster.pdf')</script>
 <script>CODE('https://github.com/Noahs-ARK/soft_patterns')</script>
 <div id="sopa_abstract" class="publications" style="display:none;">
-Recurrent and convolutional neural networks comprise two distinct families of models that have proven to be useful for encoding natural language utterances.
-In this paper we present SoPa, a new model that aims to bridge these two approaches. 
-SoPa combines neural representation learning with weighted finite-state automata (WFSAs) to learn a soft version of traditional surface patterns. 
-We show that SoPa is an extension of a one-layer CNN, and that such CNNs are equivalent to a restricted version of SoPa, and accordingly, to a restricted form of WFSA. 
-Empirically, on three text classification tasks, SoPa is comparable or better than both a BiLSTM (RNN) baseline and a CNN baseline, and is particularly useful in small data settings. 
+Recurrent and convolutional neural networks comprise two distinct families of models that have proven to be useful for encoding natural language utterances. In this paper we present SoPa, a new model that aims to bridge these two approaches. SoPa combines neural representation learning with weighted finite-state automata (WFSAs) to learn a soft version of traditional surface patterns. We show that SoPa is an extension of a one-layer CNN, and that such CNNs are equivalent to a restricted version of SoPa, and accordingly, to a restricted form of WFSA. Empirically, on three text classification tasks, SoPa is comparable or better than both a BiLSTM (RNN) baseline and a CNN baseline, and is particularly useful in small data settings. 
 </div>
 </li>
 </div>
@@ -341,14 +327,7 @@ While recurrent neural networks have found success in a variety of natural langu
 <script>POSTER('papers/peeread/peeread_poster.pdf')</script>
 <script>DATA('https://github.com/allenai/PeerRead')</script>
 <div id="peeread_abstract" class="publications" style="display:none;">
-Peer reviewing is a central component in the scientific publishing process.
-We present the first public dataset of scientific peer reviews available for research purposes (PeerRead v1) providing an opportunity to study this important artifact.
-The dataset consists of 14K paper drafts and the corresponding accept/reject decisions in top-tier venues including ACL, NIPS and ICLR. 
-The dataset also includes 8.7K textual peer reviews written by experts for a subset of the papers.
-We describe the data collection process and report interesting observed phenomena in the peer reviews.
-We also propose two novel NLP tasks based on this dataset and provide simple baseline models.
-In the first task, we show that simple models can predict whether a paper is accepted with up to 21% error reduction compared to the majority baseline.
-In the second task, we predict the numerical scores of review aspects and show that simple models can outperform the mean baseline for aspects with high variance such as 'originality' and 'impact'.
+Peer reviewing is a central component in the scientific publishing process. We present the first public dataset of scientific peer reviews available for research purposes (PeerRead v1) providing an opportunity to study this important artifact. The dataset consists of 14K paper drafts and the corresponding accept/reject decisions in top-tier venues including ACL, NIPS and ICLR.  The dataset also includes 8.7K textual peer reviews written by experts for a subset of the papers. We describe the data collection process and report interesting observed phenomena in the peer reviews. We also propose two novel NLP tasks based on this dataset and provide simple baseline models. In the first task, we show that simple models can predict whether a paper is accepted with up to 21% error reduction compared to the majority baseline. In the second task, we predict the numerical scores of review aspects and show that simple models can outperform the mean baseline for aspects with high variance such as 'originality' and 'impact'.
 </div>
 </li>
 </div>
@@ -365,11 +344,7 @@ In the second task, we predict the numerical scores of review aspects and show t
 <script>POSTER('papers/artifacts/artifacts_poster.pdf')</script>
 <!--<script>CODE('https://github.com/roys174/writing_style','data', "style='color:blue'")</script>]-->
 <div id="artifacts_abstract" class="publications" style="display:none;">
-Large-scale datasets for natural language inference are created by presenting crowd workers with a sentence (premise), and asking them to generate three new sentences (hypotheses) that it entails, contradicts, or is logically neutral with respect to. 
-We show that, in a significant portion of such data, this protocol leaves clues that make it possible to identify the label by looking only at the hypothesis, without observing the premise. 
-Specifically, we show that a simple text categorization model can correctly classify the hypothesis alone in about 67% of SNLI (Bowman et al., 2015) and 53% of MultiNLI (Williams et al., 2018).
-Our analysis reveals that specific linguistic phenomena such as negation and vagueness are highly correlated with certain inference classes. 
-Our findings suggest that the success of natural language inference models to date has been overestimated, and that the task remains a hard open problem. 
+Large-scale datasets for natural language inference are created by presenting crowd workers with a sentence (premise), and asking them to generate three new sentences (hypotheses) that it entails, contradicts, or is logically neutral with respect to. We show that, in a significant portion of such data, this protocol leaves clues that make it possible to identify the label by looking only at the hypothesis, without observing the premise. Specifically, we show that a simple text categorization model can correctly classify the hypothesis alone in about 67% of SNLI (Bowman et al., 2015) and 53% of MultiNLI (Williams et al., 2018). Our analysis reveals that specific linguistic phenomena such as negation and vagueness are highly correlated with certain inference classes. Our findings suggest that the success of natural language inference models to date has been overestimated, and that the task remains a hard open problem. 
 </div>
 </li>
 </div>
@@ -420,11 +395,11 @@ This paper is concerned with identifying contexts useful for training word repre
 <i><script>document.write(ME+", "+MAARTEN+", "+YANNIS+", "+LI+", "+YEJIN+" and "+NOAH)</script></i><br> 
 <script>CONFERENCE('http://cs.rochester.edu/nlp/rocstories/LSDSem17/', 'LSDSem 2017 shared task', 'Best performing system')</script>
 <script>PDF('papers/language_constraint/lsdsem_uw_nlp.pdf')</script>
-<script>ABSTRACT('#lsdsem_uw_nlp')</script>
+<script>ABSTRACT('#lsdsem_uw_nlp_abstract')</script>
 <script>BIB('papers/bib/lsdsem_uw_nlp.bib')</script>
 <script>SLIDES('papers/language_constraint/lsdsem_uw_nlp_slides.pdf')</script>
 <script>POSTER('papers/language_constraint/lsdsem_uw_nlp_poster.pdf')</script>
-<div id="lsdsem_uw_nlp" class="publications" style="display:none;">
+<div id="lsdsem_uw_nlp_abstract" class="publications" style="display:none;">
 This paper describes University of Washington NLP's submission for the Linking Models of Lexical, Sentential and Discourse-level Semantics (LSDSem 2017) shared task&mdash;the Story Cloze Task. Our system is a linear classifier with a variety of features, including both the scores of a neural language model and style features. We report 75.2% accuracy on the task. A further discussion of our results can be found in Schwartz et al. (2017).
 </div>
 </li>
@@ -445,6 +420,8 @@ This paper describes University of Washington NLP's submission for the Linking M
 Ph.D. dissertation<br>
 <script>PDF('papers/roy_schwartz_phd_dissertation.pdf')</script>
 <script>BIB('papers/bib/roy_schwartz_phd_dissertation.bib')</script>
+<div id="thesis_abstract"/>		
+
 </li>
 </div>
 <div id="sp_sg_paper" class="papers all word_representation">		
@@ -461,18 +438,7 @@ Ph.D. dissertation<br>
 <script>CODE('papers/sp_sg/sp_sg.html')</script>
 <!--[<a href="http://techtalks.tv/talks/symmetric-pattern-based-word-embeddings-for-improved-word-similarity-prediction/61868/" target="_blank"><span style='color:purple'>video</span></a>]-->
 <div id="sp_sg_abstract" class="publications" style="display:none;"> 
-State-of-the-art word embeddings, which are often trained on bag-of-words (BOW) contexts, provide a high quality representation of aspects of the semantics of nouns. 
-However, their quality decreases substantially for the task of verb similarity prediction. 
-In this paper we show that using symmetric pattern contexts (SPs, e.g., ``X and Y'') 
-improves word2vec verb similarity performance by up to 15% and is also instrumental in adjective similarity prediction. 
-The unsupervised SP contexts are even superior to a variety of dependency contexts extracted using a supervised dependency parser. 
-Moreover, we observe that SPs and dependency coordination contexts (Coor) capture a similar type of information, 
-and demonstrate that Coor contexts are superior to other dependency contexts including the set of all dependency contexts, 
-although they are still inferior to SPs.
-Finally, there are substantially fewer SP contexts compared to alternative representations,
-leading to a massive reduction in training time. 
-On an 8G words corpus and a 32 core machine, the SP model trains in 11 minutes,
-compared to 5 and 11 hours with BOW and all dependency contexts, respectively.
+State-of-the-art word embeddings, which are often trained on bag-of-words (BOW) contexts, provide a high quality representation of aspects of the semantics of nouns. However, their quality decreases substantially for the task of verb similarity prediction. In this paper we show that using symmetric pattern contexts (SPs, e.g., ``X and Y'') improves word2vec verb similarity performance by up to 15% and is also instrumental in adjective similarity prediction. The unsupervised SP contexts are even superior to a variety of dependency contexts extracted using a supervised dependency parser. Moreover, we observe that SPs and dependency coordination contexts (Coor) capture a similar type of information, and demonstrate that Coor contexts are superior to other dependency contexts including the set of all dependency contexts, although they are still inferior to SPs. Finally, there are substantially fewer SP contexts compared to alternative representations, leading to a massive reduction in training time. On an 8G words corpus and a 32 core machine, the SP model trains in 11 minutes, compared to 5 and 11 hours with BOW and all dependency contexts, respectively.
 </div>
 
 </li>
@@ -496,7 +462,7 @@ compared to 5 and 11 hours with BOW and all dependency contexts, respectively.
 <script>BIB('papers/bib/sp_embeddings.bib')</script>
 <script>SLIDES('papers/sp_embeddings/sp_embeddings_slides.pdf')</script>
 <script>CODE('papers/sp_embeddings/sp_embeddings.html')</script>
-<script>VIDEO("http://techtalks.tv/talks/symmetric-pattern-based-word-embeddings-for-improved-word-similarity-prediction/61868/")</script>
+<script>VIDEO('http://techtalks.tv/talks/symmetric-pattern-based-word-embeddings-for-improved-word-similarity-prediction/61868/')</script>
 <!--<script>CODE('papers/sp_embeddings/sp_embeddings.html','Pattern extraction code', "style='color:blue'")</script>]-->
 <div id="sp_embeddings_abstract" class="publications" style="display:none;"> 
 We present a novel word level vector representation based on symmetric patterns (SPs). For this aim we automatically acquire SPs (e.g., "X and Y") from a large corpus of plain text, and generate vectors where each coordinate represents the co-occurrence in SPs of the represented word with another word of the vocabulary. Our representation has three advantages over existing alternatives: First, being based on symmetric word relationships, it is highly suitable for word similarity prediction. Particularly, on the SimLex999 word similarity dataset, our model achieves a Spearman's &#961; score of 0.517, compared to 0.462 of the state-of-the-art word2vec model. Interestingly, our model performs exceptionally well on verbs, outperforming state-of-the-art baselines by 20.2&#x2012;41.5%. Second, pattern features can be adapted to the needs of a target NLP application. For example, we show that we can easily control whether the embeddings derived from SPs deem antonym pairs (e.g. (big,small)) as similar or dissimilar, an important distinction for tasks such as word classification and sentiment analysis. Finally, we show that a simple combination of the word similarity scores generated by our method and by word2vec results in a superior predictive power over that of each individual model, scoring as high as 0.563 in Spearman's &#961; on SimLex999. This emphasizes the differences between the signals captured by each of the models.
@@ -509,17 +475,14 @@ We present a novel word level vector representation based on symmetric patterns 
 
 
 <br>
-<i>Dana Rubinstein, Effi Levi, <script>document.write(ME+" and "+ARI)</script></i><br> 
+<i><script>document.write("Dana Rubinstein, Effi Levi, "+ME+",  and "+ARI)</script></i><br> 
 <script>CONFERENCE('http://www.acl2015.org/', 'ACL 2015')</script>
 <script>PDF('papers/semantics_from_text/semantics_from_text.pdf')</script>
 <script>ABSTRACT('#semantics_from_text_abstract')</script>
 <script>BIB('papers/bib/semantics_from_text.bib')</script>
 <script>POSTER('papers/semantics_from_text/semantics_from_text_poster.pdf')</script>
 <div id="semantics_from_text_abstract" class="publications" style="display:none;"> 
-In recent years, distributional models (DMs) have shown great success in representing lexical semantics. 
-In this work we show that the extent to which DMs represent semantic knowledge is highly dependent on the type of knowledge. 
-We pose the task of predicting properties of concrete nouns in a supervised setting, and compare between learning taxonomic properties (e.g., animacy) and attributive properties (e.g., size, color). 
-We employ four state-of-the-art DMs as sources of feature representation for this task, and show that they all yield poor results when tested on attributive properties, achieving no more than an average F-score of 0.37 in the binary property prediction task, compared to 0.73 on taxonomic properties. Our results suggest that the distributional hypothesis may not be equally applicable to all types of semantic information.
+In recent years, distributional models (DMs) have shown great success in representing lexical semantics. In this work we show that the extent to which DMs represent semantic knowledge is highly dependent on the type of knowledge. We pose the task of predicting properties of concrete nouns in a supervised setting, and compare between learning taxonomic properties (e.g., animacy) and attributive properties (e.g., size, color). We employ four state-of-the-art DMs as sources of feature representation for this task, and show that they all yield poor results when tested on attributive properties, achieving no more than an average F-score of 0.37 in the binary property prediction task, compared to 0.73 on taxonomic properties. Our results suggest that the distributional hypothesis may not be equally applicable to all types of semantic information.
 
 </div>
 </li>
