@@ -1,0 +1,33 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+
+main {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+.flexbox img {
+	width: 100%;
+	height: auto;
+}
+
+@media all and (max-width: 650px) {
+	.flexbox {
+		width: 100%;
+	}
+}
+
+@media all and (min-width: 651px) {
+	.col-1,
+	.col-2 {
+		width: 30%;
+	}
+	.col-3 {
+		width: 30%;
+	}
+}
